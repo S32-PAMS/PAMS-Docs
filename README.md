@@ -1,6 +1,6 @@
 # Deployment for Documentation
 
-Deployed website: ![Click here to go to Manuals site](pams-docs.vercel.app)
+Deployed website: https://pams-docs.vercel.app
 
 This is following the template used together with the [Digital Garden Obsidian Plugin](https://github.com/oleeskild/Obsidian-Digital-Garden). 
 See the README in the plugin repo for information on how to set it up.
