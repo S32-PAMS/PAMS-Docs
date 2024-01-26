@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["home","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry"]}
+{"dg-publish":true,"permalink":"/home/","tags":["home","gardenEntry"]}
 ---
 
 # Home 
@@ -7,7 +7,7 @@
 Hi this is PAMS.
 
 - [[Architecture\|Architecture]]
-- [[Security/Security\|Security]]
+- [[Security\|Security]]
 
 ## Technical deliverables
 
@@ -17,7 +17,7 @@ Hi this is PAMS.
 	- Use
 	- Troubleshoot
 
-[[Manuals/Manuals\|Manuals]]
+[[Manuals\|Manuals]]
 
 - [[For platform users\|For platform users]]
 - [[For security personnel\|For security personnel]]
