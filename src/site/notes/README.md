@@ -2,13 +2,21 @@
 {"dg-publish":true,"permalink":"/readme/","tags":["home","gardenEntry"]}
 ---
 
-# Home 
+# PAMS
 
-Personnel and Artefact Monitoring System (PAMS) is an asset tracking solution which is secure, reliable and cost-efficient. 
+Personnel and Artefact Monitoring System (PAMS) is an *asset tracking solution* which is secure, reliable and cost-efficient. 
 This is a site which links up our documentations for this system.
+
+Find out more about our design
 
 - [[Architecture\|Architecture]]
 - [[Security\|Security]]
+
+Let PAMS resolve your asset tracking needs.
+
+## User Manuals
+
+Get started here. For 
 
 ## Technical deliverables
 
