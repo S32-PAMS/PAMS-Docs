@@ -7,6 +7,8 @@
 
 ![sysarchi.png](/img/user/images/sysarchi.png)
 
+![systemarchi.png](/img/user/images/systemarchi.png)
+
 > [!note]
 > This is an advanced tracking system that employs Ultra-Wideband (UWB) technology for localisation within a defined space, such as a room. 
 
