@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/readme/","tags":["home","gardenEntry","gardenEntry"]}
+{"dg-publish":true,"permalink":"/readme/","tags":["home","gardenEntry","gardenEntry","gardenEntry"]}
 ---
 
 # PAMS
