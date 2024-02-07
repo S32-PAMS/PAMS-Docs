@@ -1,13 +1,13 @@
 ---
-{"dg-publish":true,"permalink":"/readme/","tags":["home","gardenEntry","gardenEntry"]}
+{"dg-publish":true,"permalink":"/readme/","tags":["home","gardenEntry"]}
 ---
 
 # PAMS
 
-Personnel and Artefact Monitoring System (PAMS) is an *asset tracking solution* which is secure, reliable and cost-efficient. 
-This is a site which links up our documentations for this system.
+> [!abstract] PAMS
+> Personnel and Artefact Monitoring System (PAMS) is an anti-theft solution that tracks the location of personnel and sensitive objects, which is secure, scalable and cost-efficient.
 
-Find out more about our design
+Find out more about our design:
 
 - [[Architecture\|Architecture]]
 - [[Security\|Security]]
@@ -16,8 +16,14 @@ Let PAMS resolve your asset tracking needs.
 
 ## User Manuals
 
-Get started here. For 
+Get started here.
 
+| Manual | Description |
+| ---- | ---- |
+| [[For platform users\|For platform users]] | Guide on how to set up and run an instance of PAMS as a user |
+| [[For security personnel\|For security personnel]] | Guide on how to create and administer the [[Security\|Security]] architecture of PAMS for your instance |
+| [[For hardware engineers\|For hardware engineers]] | Guide on how to create your own PAMS Tags and Anchors, as well as link it up to PAMS middleware |
+| [[For software engineers\|For software engineers]] | Guide on how to create the middleware, backend, databases and frontend for the PAMS |
 ## Technical deliverables
 
 *User manual*
