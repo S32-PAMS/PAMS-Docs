@@ -7,7 +7,10 @@
 
 ![SystemArchitecture.png](/img/user/images/SystemArchitecture.png)
 
-This is an advanced tracking system that employs Ultra-Wideband (UWB) technology for localisation within a defined space, such as a room. The system architecture is designed to collect, process, and visualise location data for personnel or assets attached to our PAMS tags. It integrates various technologies, including ESP32 microcontrollers, MQTT for messaging, Apache Kafka for message queuing, Apache Flink for stream processing, and a ExpressJS web server for data management and frontend interaction.
+> [!note]
+> This is an advanced tracking system that employs Ultra-Wideband (UWB) technology for localisation within a defined space, such as a room. 
+
+The system architecture is designed to collect, process, and visualise location data for personnel or assets attached to our PAMS tags. It *integrates various technologies*, including ESP32 microcontrollers, MQTT for messaging, Apache Kafka for message queuing, Apache Flink for stream processing, and a ExpressJS web server for data management and frontend interaction.
 
 ## Hardware components
 
