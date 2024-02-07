@@ -5,8 +5,6 @@
 
 ## System Overview of the PAMS Architecture
 
-![systemarchitecture.jpeg](/img/user/images/systemarchitecture.jpeg)
-
 ![sysarchi.png](/img/user/images/sysarchi.png)
 
 > [!note]
