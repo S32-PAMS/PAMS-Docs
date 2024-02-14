@@ -5,6 +5,7 @@
 > [!abstract] Server setup
 > This manual guides the initial setup of the software server for PAMS (Personnel and Asset Monitoring System), which can run both *locally* and *remotely* on a cloud instance. The server hosts various components of the PAMS [[Architecture\|Architecture]], including middleware and software components necessary for tracking and visualising location data of tagged objects.
 
+The Dockerisation of our middleware and software components is what makes this application portable to be served locally or remotely, depending on the choice of the system administrator, and as such this is a necessary step before the set up of any other components.
 
 ### Operating system
 
