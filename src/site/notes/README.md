@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/readme/","tags":["home","gardenEntry","gardenEntry","gardenEntry","gardenEntry"]}
+{"dg-publish":true,"permalink":"/readme/","tags":["home","gardenEntry"]}
 ---
 
 # PAMS
@@ -17,6 +17,8 @@ Let PAMS resolve your asset tracking needs.
 ## User Manuals
 
 Get started here.
+- [[Hardware initial setup\|Hardware initial setup]]
+- [[Server/Server initial setup\|Server initial setup]]
 
 | Manual | Description |
 | ---- | ---- |
