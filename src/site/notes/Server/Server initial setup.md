@@ -135,4 +135,36 @@ After generating the key, remove the `gen_key` file for security:
 rm gen_key
 ```
 
-You have successfully installed Docker and configured Docker authentication with GPG credentials on your system. This setup ensures a secure environment for deploying and managing Dockerised applications for the PAMS project.
+You have successfully installed Docker and configured Docker authentication with GPG credentials on your system. This setup ensures a secure environment for deploying and managing Dockerised applications for the PAMS project. Now, we can move on to setting up Docker Compose.
+
+#### Docker Compose Setup
+
+Installation should have been completed above. If not, refer to Docker's documentation. Verify installation by checking its version:
+
+```bash
+docker-compose --version
+```
+
+##### Create Docker Compose file
+
+Navigate to your project directory and create a file named `docker-compose.yml`. This file will define all the necessary services, networks and volumes for the PAMS architecture. 
+
+```yml
+version: '3.8'
+services:
+```
+
+Services will be populated as the other components of the [[Architecture\|Architecture]] are set up.
+
+##### Running Docker Compose
+
+With your `docker-compose.yml` file ready, start your services by running:
+
+```bash
+docker-compose up -d
+```
+
+
+
+- Back to [[README\|README]]
+- Go set up [[Server/MQTT Broker\|MQTT Broker]]
