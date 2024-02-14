@@ -30,7 +30,7 @@ Adheres to Message-Oriented Middleware design, where components should have mech
 
 | Component | Description and role |
 | ---- | ---- |
-| [[MQTT Broker\|MQTT Broker]] | `nanomq` instance running in a Docker container<br>Acts as the nerve centre with hardware-facing communication<br><br>Receives data from anchors and categorises them into 2 topics:<br>- `alive` for heartbeat signals from anchors<br>- `data` for location information from tags |
+| [[Server/MQTT Broker\|MQTT Broker]] | `nanomq` instance running in a Docker container<br>Acts as the nerve centre with hardware-facing communication<br><br>Receives data from anchors and categorises them into 2 topics:<br>- `alive` for heartbeat signals from anchors<br>- `data` for location information from tags |
 | [[Rust Bridge\|Rust Bridge]] | A Rust programming environment container<br>Serves as the conduit between the MQTT Broker and Apache Kafka.<br><br>Consumes messages (in raw bytes) received by the MQTT Broker, and passes them into the Apache Kafka message queue |
 | [[Apache Kafka\|Apache Kafka]] | Functions as the central message queue<br><br>Organises messages into `alive` and `data` topics<br>This separation facilitates efficient data processing downstream by Apache Flink |
 
