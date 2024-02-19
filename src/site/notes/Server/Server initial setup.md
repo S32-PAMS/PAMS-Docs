@@ -9,11 +9,7 @@ The Dockerisation of our middleware and software components is what makes this a
 
 ### Operating system
 
-> Linux-based OS (e.g. Ubuntu, CentOS) is recommended for their robustness and support for Docker and other dependencies
-
-All commands are meant to be run on a Ubuntu or Debian-based system. Ensure your system has a static IP address if running in a local network, for easy access and configuration.
-
-On first set-up, update and get C build-essentials:
+Start with a Linux-based OS (e.g., Ubuntu, CentOS). Update your system and install the necessary packages.
 
 ```bash
 sudo apt-get update && sudo apt-get upgrade -y
@@ -22,7 +18,7 @@ sudo apt-get install -y curl gcc make build-essential cmake git software-propert
 
 #### (Optional) Firewall
 
-A simple firewall can be set up to control incoming and outgoing network traffic. `UFW` (Uncomplicated Firewall) is a user-friendly interface for managing `iptables` and is recommended for simplifying firewall configuration.
+Install and configure UFW (Uncomplicated Firewall) to manage network traffic.
 
 ```bash
 sudo apt-get install -y ufw
@@ -163,7 +159,6 @@ With your `docker-compose.yml` file ready, start your services by running:
 ```bash
 docker-compose up -d
 ```
-
 
 
 - Back to [[README\|README]]
