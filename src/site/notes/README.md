@@ -1,11 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/readme/","tags":["home","gardenEntry","gardenEntry","gardenEntry"]}
+{"dg-publish":true,"permalink":"/readme/","tags":["home","gardenEntry"]}
 ---
 
 # PAMS
 
-> [!abstract] PAMS
-> Personnel and Artefact Monitoring System (PAMS) is an anti-theft solution that tracks the location of personnel and sensitive objects, which is secure, scalable and cost-efficient.
+> [!abstract] Personnel and Artefact Monitoring System (PAMS)
+> Personnel and Artefact Monitoring System (PAMS) is an anti-theft solution that utilises reliable, robust technology for precise, real-time localisation of personnel and sensitive objects within specified environments. PAMS is designed to ensure security, enhance operational efficiency, be scalable and cost efficient. It integrates with existing networking infrastructures to provide detailed analytics, enabling effective resource monitoring and management across various sectors.
 
 Find out more about our design:
 
@@ -26,6 +26,17 @@ Get started here.
 | [[For security personnel\|For security personnel]] | Guide on how to create and administer the [[Security\|Security]] architecture of PAMS for your instance |
 | [[For hardware engineers\|For hardware engineers]] | Guide on how to create your own PAMS Tags and Anchors, as well as link it up to PAMS middleware |
 | [[For software engineers\|For software engineers]] | Guide on how to create the middleware, backend, databases and frontend for the PAMS |
+
+### Project Booklet for the visitors to the Physical Showcase.
+
+We are preparing a Project Booklet to mark the end of Capstone Program 2023.  We will need each team to send us a short 50-70 word description of your project. You have to clear this description with your company mentor and please send us their email approval together with the project description by 20 February 2024.
+ 
+An example of a project and its description published in the booklet is appended below.
+
+[TITLE] Personnel and Artefact Monitoring System (PAMS)
+
+[PROJECT DESCRIPTION] Personnel and Artefact Monitoring System (PAMS) is an anti-theft solution that utilises reliable, robust technology for precise, real-time localisation of personnel and sensitive objects within specified environments. PAMS is designed to ensure security, enhance operational efficiency, be scalable and cost efficient. It integrates with existing networking infrastructures to provide detailed analytics, enabling effective resource monitoring and management across various sectors.
+
 ## Technical deliverables
 
 *User manual*
@@ -43,7 +54,7 @@ Get started here.
 
 ## Summarised deliverables
 
-*A3 poster*
+*A1 poster*
 - Summary of the project
 
 Webpage with video on prototype
