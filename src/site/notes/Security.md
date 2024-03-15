@@ -72,7 +72,7 @@ Image security
 - Database
 	- Data encryption
 	- Database administrator authentication
-	- Parametrised queries/Prepared statements (Prevent SQL Injection)
+	- Parametrised queries/Prepared statements (Prevent SQL Injection) (wip)
 - Web server
 	- TLS (wip)
 
@@ -81,5 +81,5 @@ Image security
 
 - User authentication OAuth JWT (login system)
 - Input sanitisation and validation (wip)
-- Role-Based Access Control (admin superuser, normal user) : principle PoLP
+- Role-Based Access Control (admin superuser, normal user) : principle PoLP (wip)
 
