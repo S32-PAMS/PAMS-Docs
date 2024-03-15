@@ -18,14 +18,15 @@ sudo apt-get install -y curl gcc make build-essential cmake git software-propert
 
 #### (Optional) Firewall
 
-Install and configure UFW (Uncomplicated Firewall) to manage network traffic.
+Install and configure UFW (Uncomplicated Firewall) to manage network traffic. We did not do this in our prototype, but it is for your consideration.
 
 ```bash
 sudo apt-get install -y ufw
 sudo ufw enable
 sudo ufw allow ssh
 sudo ufw allow 80
-sudo ufw allow 443
+sudo ufw allow 1883
+sudo ufw allow 8883
 ... take note to allow more ports that you setup later
 ```
 
@@ -33,7 +34,7 @@ These additional steps will improve the initial security posture. These are basi
 
 ### Docker
 
-> Required for running containerised applications such as the [[Server/MQTT Broker\|MQTT Broker]], [[Rust Bridge\|Rust Bridge]], [[Apache Kafka\|Apache Kafka]], and [[MongoDB\|MongoDB]].
+> Required for running containerised applications such as the [[Server/MQTT Broker\|MQTT Broker]], [[Server/Rust Bridge\|Rust Bridge]], [[Apache Kafka\|Apache Kafka]], and [[MongoDB\|MongoDB]].
 > 
 > This section provides step-by-step instructions for installing Docker on an Ubuntu-based system and setting up Docker authentication with GPG credentials. It ensures a secure and optimised Docker environment for PAMS deployment.
 
@@ -143,7 +144,7 @@ docker-compose --version
 
 ##### Create Docker Compose file
 
-Navigate to your project directory and create a file named `docker-compose.yml`. This file will define all the necessary services, networks and volumes for the PAMS architecture. 
+Navigate to your project directory and create a file named `docker-compose.yml`. This file will define all the necessary services, networks and volumes for the PAMS architecture.
 
 ```yml
 version: '3.8'
