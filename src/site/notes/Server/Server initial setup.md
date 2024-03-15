@@ -32,6 +32,16 @@ sudo ufw allow 8883
 
 These additional steps will improve the initial security posture. These are basic examples, and the system can be complemented by more sophisticated firewall options as you deem fit.
 
+### Rust installation
+
+For the creation of our [[Server/Rust Bridge\|Rust Bridge]], install Rust on your development environment.
+
+```shell
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+This assumes you are following our prototype. You can use any other language for your bridge between the [[Server/MQTT Broker\|MQTT Broker]] and [[Apache Kafka\|Apache Kafka]].
+
 ### Docker
 
 > Required for running containerised applications such as the [[Server/MQTT Broker\|MQTT Broker]], [[Server/Rust Bridge\|Rust Bridge]], [[Apache Kafka\|Apache Kafka]], and [[MongoDB\|MongoDB]].
