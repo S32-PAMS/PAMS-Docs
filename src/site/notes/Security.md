@@ -45,6 +45,9 @@ Image security
 
 ## Link safety
 
+> [!tldr]
+> These are the considerations put in place to ensure link safety. It is possible to implement PKI and TLS to further secure the system as well.b
+
 - Ultra-Wideband
 	- Time of Flight and Ranging, while allowing functional calculation of distance between tag and anchor, also verifies the physical proximity of devices, making it challenging for attackers to spoof a device's location
 - WiFi
@@ -55,6 +58,9 @@ Image security
 
 
 ## Hardware safety
+
+> [!tldr]
+> These are the design considerations to ensure hardware safety, which includes tamper-proofing and the option to pass messages with TLS secured links.
 
 - [[Tags\|Tags]]
 	- Physical security
@@ -69,6 +75,9 @@ Image security
 
 ## Backend safety
 
+> [!tldr]
+> These are the considerations you should take note of on the backend.
+
 - Database
 	- Data encryption
 	- Database administrator authentication
@@ -76,8 +85,10 @@ Image security
 - Web server
 	- TLS (wip)
 
-
 ## Frontend safety
+
+> [!tldr]
+> These are the considerations you should take note of on the frontend.
 
 - User authentication OAuth JWT (login system)
 - Input sanitisation and validation (wip)
