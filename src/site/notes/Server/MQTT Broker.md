@@ -18,7 +18,7 @@ You also need a text editor to create and edit the configuration and Docker Comp
 > - Passes output to [[Server/Rust Bridge\|Rust Bridge]]
 > - [MQTT Protocol](https://mqtt.org) uses port `1883` for default use, and port `8883` for MQTTS (MQTT with TLS)
 
-# Inclusion of Docker image into the server
+# Setup Docker compose
 
 Choose one among:
 - [NanoMQ Docker hub](https://hub.docker.com/r/emqx/nanomq)
