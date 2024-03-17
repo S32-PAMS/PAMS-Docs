@@ -156,6 +156,9 @@ docker-compose --version
 
 Navigate to your project directory and create a file named `docker-compose.yml`. This file will define all the necessary services, networks and volumes for the PAMS architecture.
 
+> [!note]
+> For our prototype, we created our `docker-compose.yml` inside our project directory's `Rust` folder. Path is `Rust/docker-compose.yml`.
+
 ```yml
 version: '3.8'
 services:
