@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/server/mqtt-broker/","tags":["middleware","archi"]}
+{"dg-publish":true,"permalink":"/server/mqtt-broker/","tags":["middleware","archi","message-passing"]}
 ---
 
 > [!abstract] MQTT Broker
