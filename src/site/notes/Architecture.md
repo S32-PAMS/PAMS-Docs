@@ -13,6 +13,7 @@
 
 The system architecture is **designed to collect, process, and visualise location data** for personnel or assets attached to our PAMS tags. It integrates various technologies, including ESP32 microcontrollers, MQTT for messaging, Apache Kafka for message queuing, Apache Flink for stream processing, and a ExpressJS web server for data management and frontend interaction.
 
+- For an example to use the prototype, see [[For platform users\|For platform users]]
 - To make the [[Architecture#Hardware components\|#Hardware components]], follow [[For hardware engineers\|For hardware engineers]].
 - To make the [[Architecture#Middleware components\|#Middleware components]] and [[Architecture#Software components\|#Software components]], follow [[For software engineers\|For software engineers]]
 - To set up security in the system, follow [[For security personnel\|For security personnel]]
@@ -29,8 +30,8 @@ Design is minimal to reduce weight and bulk.
 ## Middleware components
 
 Adheres to Message-Oriented Middleware design, where components should have mechanisms for:
-- Message passing
-- Message queuing
+- #message-passing 
+- #message-queueing
 
 | Component        | Description and role                                                                                                                                                                                                                                                                               |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
