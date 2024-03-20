@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/server/server-initial-setup/","tags":["archi","middleware","software"]}
+{"dg-publish":true,"permalink":"/server/server-initial-setup/","tags":["archi","middleware","software"],"noteIcon":""}
 ---
 
 > [!abstract] Server setup
@@ -42,17 +42,103 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 This assumes you are following our prototype. You can use any other language for your bridge between the [[Server/MQTT Broker\|MQTT Broker]] and [[Apache Kafka\|Apache Kafka]].
 
-### Protobuf compiler
+### Protobuf compilation
 
 In our initial message passing phase, messages will be serialised in [Google Protocol Buffers](https://protobuf.dev), which is a language-neutral, platform-neutral and extensible method of serialisation of structured data. To compile `.proto` files, we require that the `protoc` Protobuf compiler is installed in the system. As such, do the following:
 
 ```shell
-sudo apt install protobuf-compiler
+sudo apt install protobuf-compiler -y
 ```
 
 This is crucial for the following components in our prototype:
 - [[Anchors\|Anchors]]
 - [[Apache Flink\|Apache Flink]]
+
+#### Creation of standard `.proto` file for messages
+
+> [!note]
+> This is placed here as this file, once created, will be the file used in the whole system throughout.
+
+This contains the 2 designed messages which our [[Anchors\|Anchors]] will send, and our [[Apache Flink\|Apache Flink]] will use to deserialise and do calculations from.
+
+`message.proto`
+
+```c
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+package message;
+
+message AnchorAlive {
+    string anchor_id = 1; // anchor id
+    google.protobuf.Timestamp timestamp = 2; // timestamp
+}
+
+message AnchorData {
+    string anchor_id = 1; // anchor id
+    google.protobuf.Timestamp timestamp = 2; // timestamp
+    map<string, TagData> tags = 3; // tag data
+}
+
+message TagData {
+    bool detached = 1; // is tag detached
+    bool battery_low = 2; // is battery low
+    float distance = 3; // distance
+}
+```
+
+`timestamp.proto`, extracted from [official protobuf](https://github.com/protocolbuffers/protobuf/blob/main/src/google/protobuf/timestamp.proto)
+
+```c
+// Protocol Buffers - Google's data interchange format
+// Copyright 2008 Google Inc.  All rights reserved.
+// https://developers.google.com/protocol-buffers/
+//
+
+syntax = "proto3";
+
+package google.protobuf;
+
+option cc_enable_arenas = true;
+option go_package = "google.golang.org/protobuf/types/known/timestamppb";
+option java_package = "com.google.protobuf";
+option java_outer_classname = "TimestampProto";
+option java_multiple_files = true;
+option objc_class_prefix = "GPB";
+option csharp_namespace = "Google.Protobuf.WellKnownTypes";
+
+message Timestamp {
+  int64 seconds = 1;
+  int32 nanos = 2;
+}
+```
+
+#### Compilation for [[Anchors\|Anchors]]
+
+As anchors are ESP32, it should require the [nanopb](https://jpa.kapsi.fi/nanopb/) plugin. First clone the repository:
+
+```shell
+ git clone https://github.com/nanopb/nanopb.git
+```
+
+Then compile the `.proto` files (in the same directory) with these commands:
+
+```shell
+protoc --plugin=protoc-gen-nanopb="$(pwd)/nanopb/generator/protoc-gen-nanopb" --nanopb_out=. message.proto
+protoc --plugin=protoc-gen-nanopb="$(pwd)/nanopb/generator/protoc-gen-nanopb" --nanopb_out=. timestamp.proto
+```
+
+This generates `message.pb.c`, `message.pb.h`, `timestamp.pb.c` and `timestamp.pb.h` files. These files will be used in the setup of [[Anchors\|Anchors]], so have them ready.
+
+#### Compilation for [[Apache Flink\|Apache Flink]]
+
+```shell
+protoc --python_out . message.proto
+protoc --python_out . timestamp.proto
+```
+
+This generates `message_pb2.py` and `timestamp_pb2.py` files. These files will be used in the setup of [[Apache Flink\|Apache Flink]], so have them ready.
 
 ### Docker
 
