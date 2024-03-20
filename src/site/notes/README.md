@@ -18,7 +18,8 @@ Let PAMS resolve your asset tracking needs.
 
 ## User Manuals
 
-Get started here.
+**Get started** here
+
 - [[Hardware initial setup\|Hardware initial setup]]
 - [[Server/Server initial setup\|Server initial setup]]
 
@@ -29,11 +30,9 @@ Get started here.
 | [[For hardware engineers\|For hardware engineers]] | Guide on how to create your own PAMS Tags and Anchors, as well as link it up to PAMS middleware |
 | [[For software engineers\|For software engineers]] | Guide on how to create the middleware, backend, databases and frontend for the PAMS |
 
-## Technical deliverables
+Individual components
 
-[[Manuals\|Manuals]]
+- #hardware: [[Tags\|Tags]], [[Anchors\|Anchors]]
+- #middleware : [[Server/MQTT Broker\|MQTT Broker]], [[Server/Rust Bridge\|Rust Bridge]], [[Apache Kafka\|Apache Kafka]]
+- #software : [[Apache Flink\|Apache Flink]], [[Apache Kafka\|Apache Kafka]], [[Web server\|Web server]], [[MongoDB\|MongoDB]], [[Frontend\|Frontend]], [[MySQL\|MySQL]]
 
-- [[For platform users\|For platform users]] gen+img
-- [[For security personnel\|For security personnel]] remote local versions, detail
-- [[For hardware engineers\|For hardware engineers]] gen+img
-- [[For software engineers\|For software engineers]] detail
