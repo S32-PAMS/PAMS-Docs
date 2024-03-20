@@ -5,7 +5,7 @@
 > [!abstract] Security design and considerations
 > This document outlines the security designs put into the system.
 
-Implementation manual: [[For security personnel\|For security personnel]]
+Implementation manual: [[Guides/For security personnel\|For security personnel]]
 
 # Safety considerations
 
