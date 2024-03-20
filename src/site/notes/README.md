@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/readme/","tags":["home","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/readme/","tags":["home","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry"],"noteIcon":""}
 ---
 
 # PAMS
@@ -25,14 +25,14 @@ Let PAMS resolve your asset tracking needs.
 
 | Manual | Description |
 | ---- | ---- |
-| [[For platform users\|For platform users]] | Guide on how to set up and run an instance of PAMS as a user |
-| [[For security personnel\|For security personnel]] | Guide on how to create and administer the [[Security\|Security]] architecture of PAMS for your instance |
+| [[Guides/For platform users\|For platform users]] | Guide on how to set up and run an instance of PAMS as a user |
+| [[Guides/For security personnel\|For security personnel]] | Guide on how to create and administer the [[Security\|Security]] architecture of PAMS for your instance |
 | [[For hardware engineers\|For hardware engineers]] | Guide on how to create your own PAMS Tags and Anchors, as well as link it up to PAMS middleware |
 | [[For software engineers\|For software engineers]] | Guide on how to create the middleware, backend, databases and frontend for the PAMS |
 
 Individual components
 
 - #hardware: [[Tags\|Tags]], [[Anchors\|Anchors]]
-- #middleware : [[Server/MQTT Broker\|MQTT Broker]], [[Server/Rust Bridge\|Rust Bridge]], [[Apache Kafka\|Apache Kafka]]
-- #software : [[Apache Flink\|Apache Flink]], [[Apache Kafka\|Apache Kafka]], [[Web server\|Web server]], [[MongoDB\|MongoDB]], [[Frontend\|Frontend]], [[MySQL\|MySQL]]
+- #middleware : [[Server/MQTT Broker\|MQTT Broker]], [[Server/Rust Bridge\|Rust Bridge]], [[Server/Apache Kafka\|Apache Kafka]]
+- #software : [[Apache Flink\|Apache Flink]], [[Server/Apache Kafka\|Apache Kafka]], [[Web server\|Web server]], [[MongoDB\|MongoDB]], [[Frontend\|Frontend]], [[MySQL\|MySQL]]
 
