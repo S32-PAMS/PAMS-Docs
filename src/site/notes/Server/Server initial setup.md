@@ -40,7 +40,7 @@ For the creation of our [[Server/Rust Bridge\|Rust Bridge]], install Rust on you
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-This assumes you are following our prototype. You can use any other language for your bridge between the [[Server/MQTT Broker\|MQTT Broker]] and [[Apache Kafka\|Apache Kafka]].
+This assumes you are following our prototype. You can use any other language for your bridge between the [[Server/MQTT Broker\|MQTT Broker]] and [[Server/Apache Kafka\|Apache Kafka]].
 
 ### Protobuf compilation
 
@@ -142,7 +142,7 @@ This generates `message_pb2.py` and `timestamp_pb2.py` files. These files will b
 
 ### Docker
 
-> Required for running containerised applications such as the [[Server/MQTT Broker\|MQTT Broker]], [[Server/Rust Bridge\|Rust Bridge]], [[Apache Kafka\|Apache Kafka]], and [[MongoDB\|MongoDB]].
+> Required for running containerised applications such as the [[Server/MQTT Broker\|MQTT Broker]], [[Server/Rust Bridge\|Rust Bridge]], [[Server/Apache Kafka\|Apache Kafka]], and [[MongoDB\|MongoDB]].
 > 
 > This section provides step-by-step instructions for installing Docker on an Ubuntu-based system and setting up Docker authentication with GPG credentials. It ensures a secure and optimised Docker environment for PAMS deployment.
 
