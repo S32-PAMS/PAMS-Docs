@@ -42,6 +42,18 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 This assumes you are following our prototype. You can use any other language for your bridge between the [[Server/MQTT Broker\|MQTT Broker]] and [[Apache Kafka\|Apache Kafka]].
 
+### Protobuf compiler
+
+In our initial message passing phase, messages will be serialised in [Google Protocol Buffers](https://protobuf.dev), which is a language-neutral, platform-neutral and extensible method of serialisation of structured data. To compile `.proto` files, we require that the `protoc` Protobuf compiler is installed in the system. As such, do the following:
+
+```shell
+sudo apt install protobuf-compiler
+```
+
+This is crucial for the following components in our prototype:
+- [[Anchors\|Anchors]]
+- [[Apache Flink\|Apache Flink]]
+
 ### Docker
 
 > Required for running containerised applications such as the [[Server/MQTT Broker\|MQTT Broker]], [[Server/Rust Bridge\|Rust Bridge]], [[Apache Kafka\|Apache Kafka]], and [[MongoDB\|MongoDB]].
