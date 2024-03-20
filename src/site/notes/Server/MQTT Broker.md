@@ -43,7 +43,7 @@ services:
 	  - <path to MQTT broker private key>
 ```
 
-This assumes that [[For security personnel\|the secure implementation]] is set up. Use the `openssl` version of the image.
+This assumes that [[Guides/For security personnel\|the secure implementation]] is set up. Use the `openssl` version of the image.
 
 ## NanoMQ
 
