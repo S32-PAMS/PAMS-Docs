@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/architecture/","tags":["archi"]}
+{"dg-publish":true,"permalink":"/architecture/","tags":["archi"],"noteIcon":""}
 ---
 
 
