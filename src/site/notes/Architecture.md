@@ -5,8 +5,7 @@
 
 ## System Overview of the PAMS Architecture
 
-
-![systemarchi.png](/img/user/Attachments/systemarchi.png)
+![archi.png](/img/user/Attachments/archi.png)
 
 > [!note]
 > This is an advanced tracking system that employs Ultra-Wideband (UWB) technology for localisation within a defined space, such as a room. 
