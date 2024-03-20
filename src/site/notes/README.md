@@ -1,13 +1,13 @@
 ---
-{"dg-publish":true,"permalink":"/readme/","tags":["home","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry"]}
+{"dg-publish":true,"permalink":"/readme/","tags":["home","gardenEntry"]}
 ---
 
 # PAMS
 
 > [!abstract] Personnel and Artefact Monitoring System (PAMS)
-> Personnel and Artefact Monitoring System (PAMS) is an anti-theft solution that utilises reliable, robust technology for precise, real-time localisation of personnel and sensitive objects within specified environments. PAMS is designed to ensure security, enhance operational efficiency, be scalable and cost efficient. It integrates with existing networking infrastructures to provide detailed analytics, enabling effective resource monitoring and management across various sectors.
-
-TODO: 
+> **Personnel and Artefact Monitoring System (PAMS)** is an *anti-theft solution* that utilises reliable, robust technology for *precise, real-time localisation* of personnel and sensitive objects within specified environments.
+> 
+> PAMS is *designed* to provide *security* and enhance operational *efficiency*. It is both *scalable* and *cost-efficient*. It also integrates with existing networking infrastructures to provide *detailed analytics*, enabling effective resource monitoring and management across various sectors.
 
 Find out more about our design:
 
