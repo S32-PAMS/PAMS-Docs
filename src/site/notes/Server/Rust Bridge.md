@@ -3,7 +3,7 @@
 ---
 
 > [!abstract] Rust bridge
-> MQTT messages pass from the [[Server/MQTT Broker\|MQTT Broker]], but [[Apache Kafka\|Apache Kafka]] cannot consume directly from the [[Server/MQTT Broker\|MQTT Broker]]. As such, we made this bridge to pass the message from the MQTT topics to the Kafka topics. You can implement this in any other development language, but we chose a Rust development image for this purpose.
+> MQTT messages pass from the [[Server/MQTT Broker\|MQTT Broker]], but [[Server/Apache Kafka\|Apache Kafka]] cannot consume directly from the [[Server/MQTT Broker\|MQTT Broker]]. As such, we made this bridge to pass the message from the MQTT topics to the Kafka topics. You can implement this in any other development language, but we chose a Rust development image for this purpose.
 
 This assumes [[Server/Server initial setup\|Server initial setup]] is complete.
 
@@ -28,7 +28,7 @@ members = [
 ]
 ```
 
-Create producer application. This refers to something that 'produces' inputs for [[Apache Kafka\|Apache Kafka]], hence the name.
+Create producer application. This refers to something that 'produces' inputs for [[Server/Apache Kafka\|Apache Kafka]], hence the name.
 
 ```shell
 cargo new producer
@@ -112,7 +112,7 @@ Inside `Rust/producer/src` which should be created after creating the `producer`
 
 > [!note]
 > - Ensure the MQTT topic name that you are subscribing to is consistent to what your [[Anchors\|Anchors]] are sending, and what the [[Server/MQTT Broker\|MQTT Broker]] is sending.
-> - Ensure the names of the [[Apache Kafka\|Apache Kafka]] topics are also consistent with what [[Apache Kafka\|Apache Kafka]] will later subscribe to.
+> - Ensure the names of the [[Server/Apache Kafka\|Apache Kafka]] topics are also consistent with what [[Server/Apache Kafka\|Apache Kafka]] will later subscribe to.
 > - Change your [[Server/MQTT Broker\|MQTT Broker]]'s domain or IP address accordingly.
 
 ### Base implementation (without TLS)
@@ -346,4 +346,4 @@ fn create_tls_kafka_producer(brokers: &str) -> FutureProducer {
 }
 ```
 
-With this, move on to set up [[Apache Kafka\|Apache Kafka]].
+With this, move on to set up [[Server/Apache Kafka\|Apache Kafka]].
