@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/apache-kafka/","tags":["middleware","archi","message-queueing"]}
+{"dg-publish":true,"permalink":"/apache-kafka/","tags":["middleware","archi","message-queueing"],"noteIcon":""}
 ---
 
 > [!abstract] Apache Kafka
