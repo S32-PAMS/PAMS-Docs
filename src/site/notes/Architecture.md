@@ -4,7 +4,7 @@
 
 ## System Overview of the PAMS Architecture
 
-![systemarchi.png](/img/user/Attachments/systemarchi.png)
+![systemarchi.png](/img/user/Attachments/archi/systemarchi.png)
 
 > [!note]
 > This is an advanced tracking system that employs Ultra-Wideband (UWB) technology for localisation within a defined space, such as a room. 
@@ -18,6 +18,8 @@ The system architecture is **designed to collect, process, and visualise locatio
 
 ## Hardware components
 
+![hardwarearchi.png](/img/user/Attachments/archi/hardwarearchi.png)
+
 Design is minimal to reduce weight and bulk.
 
 | Component   | Description and role                                                                                                                                                                                                                                         |
@@ -26,6 +28,8 @@ Design is minimal to reduce weight and bulk.
 | [[Anchors\|Anchors]] | Also equipped with ESP32 microcontrollers and DW1000 UWB modules<br><br>Stationed at fixed positions in the room<br>Receive data from tags<br>Responsible for forwarding this information to the system's backend via WiFi, using MQTT protocol              |
 
 ## Middleware components
+
+![middlewarearchi.png](/img/user/Attachments/archi/middlewarearchi.png)
 
 Adheres to Message-Oriented Middleware design, where components should have mechanisms for:
 
@@ -39,6 +43,8 @@ Adheres to Message-Oriented Middleware design, where components should have mech
 | [[Server/Apache Kafka\|Apache Kafka]] | Functions as the central message queue<br><br>Organises messages into `alive` and `data` topics<br>This separation facilitates efficient data processing downstream by Apache Flink                                                                                                                |
 
 ## Software components
+
+![softwarearchi.png](/img/user/Attachments/archi/softwarearchi.png)
 
 Designed for stream processing of real-time messages, to be aggregated in a user-friendly dashboard.
 
