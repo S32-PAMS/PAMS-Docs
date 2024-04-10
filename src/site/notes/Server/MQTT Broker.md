@@ -62,4 +62,6 @@ services:
 
 We used the full image for full functionality of the MQTT broker, but it is not necessary in most cases. The default installation will also work.
 
+This is the one used in Capstone Showcase.
+
 Now you can proceed to [[Server/Rust Bridge\|Rust Bridge]]
