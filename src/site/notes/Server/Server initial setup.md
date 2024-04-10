@@ -52,14 +52,14 @@ sudo apt install protobuf-compiler -y
 
 This is crucial for the following components in our prototype:
 - [[Anchors\|Anchors]]
-- [[Apache Flink\|Apache Flink]]
+- [[Server/Apache Flink\|Apache Flink]]
 
 #### Creation of standard `.proto` file for messages
 
 > [!note]
 > This is placed here as this file, once created, will be the file used in the whole system throughout.
 
-This contains the 2 designed messages which our [[Anchors\|Anchors]] will send, and our [[Apache Flink\|Apache Flink]] will use to deserialise and do calculations from.
+This contains the 2 designed messages which our [[Anchors\|Anchors]] will send, and our [[Server/Apache Flink\|Apache Flink]] will use to deserialise and do calculations from.
 
 `message.proto`
 
@@ -131,18 +131,18 @@ protoc --plugin=protoc-gen-nanopb="$(pwd)/nanopb/generator/protoc-gen-nanopb" --
 
 This generates `message.pb.c`, `message.pb.h`, `timestamp.pb.c` and `timestamp.pb.h` files. These files will be used in the setup of [[Anchors\|Anchors]], so have them ready.
 
-#### Compilation for [[Apache Flink\|Apache Flink]]
+#### Compilation for [[Server/Apache Flink\|Apache Flink]]
 
 ```shell
 protoc --python_out . message.proto
 protoc --python_out . timestamp.proto
 ```
 
-This generates `message_pb2.py` and `timestamp_pb2.py` files. These files will be used in the setup of [[Apache Flink\|Apache Flink]], so have them ready.
+This generates `message_pb2.py` and `timestamp_pb2.py` files. These files will be used in the setup of [[Server/Apache Flink\|Apache Flink]], so have them ready.
 
 ### Docker
 
-> Required for running containerised applications such as the [[Server/MQTT Broker\|MQTT Broker]], [[Server/Rust Bridge\|Rust Bridge]], [[Server/Apache Kafka\|Apache Kafka]], and [[Database\|Database]].
+> Required for running containerised applications such as the [[Server/MQTT Broker\|MQTT Broker]], [[Server/Rust Bridge\|Rust Bridge]], [[Server/Apache Kafka\|Apache Kafka]], and [[Frontend/Database\|Database]].
 > 
 > This section provides step-by-step instructions for installing Docker on an Ubuntu-based system and setting up Docker authentication with GPG credentials. It ensures a secure and optimised Docker environment for PAMS deployment.
 
