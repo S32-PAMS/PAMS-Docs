@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/readme/","tags":["home","gardenEntry","gardenEntry"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/readme/","tags":["home","gardenEntry"],"noteIcon":""}
 ---
 
 # PAMS
@@ -34,5 +34,5 @@ Individual components
 
 - #hardware: [[Tags\|Tags]], [[Anchors\|Anchors]]
 - #middleware : [[Server/MQTT Broker\|MQTT Broker]], [[Server/Rust Bridge\|Rust Bridge]], [[Server/Apache Kafka\|Apache Kafka]]
-- #software : [[Server/Apache Flink\|Apache Flink]], [[Server/Apache Kafka\|Apache Kafka]], [[Web server\|Web server]], [[Frontend/Database\|Database]], [[Frontend/Frontend\|Frontend]]
+- #software : [[Server/Apache Flink\|Apache Flink]], [[Server/Apache Kafka\|Apache Kafka]], [[Web server\|Web server]], [[Frontend/Database\|Database]], [[Frontend/Frontend\|Frontend]], [[Frontend/Camera Server\|Camera Server]]
 
