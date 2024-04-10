@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/readme/","tags":["home","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/readme/","tags":["home","gardenEntry"],"noteIcon":""}
 ---
 
-# PAMS
+# PAMS del
 
 > [!abstract] Personnel and Artefact Monitoring System (PAMS)
 > **Personnel and Artefact Monitoring System (PAMS)** is an *anti-theft solution* that utilises reliable, robust technology for *precise, real-time localisation* of personnel and sensitive objects within specified environments.
@@ -34,5 +34,5 @@ Individual components
 
 - #hardware: [[Tags\|Tags]], [[Anchors\|Anchors]]
 - #middleware : [[Server/MQTT Broker\|MQTT Broker]], [[Server/Rust Bridge\|Rust Bridge]], [[Server/Apache Kafka\|Apache Kafka]]
-- #software : [[Apache Flink\|Apache Flink]], [[Server/Apache Kafka\|Apache Kafka]], [[Web server\|Web server]], [[MongoDB\|MongoDB]], [[Frontend\|Frontend]], [[MySQL\|MySQL]]
+- #software : [[Apache Flink\|Apache Flink]], [[Server/Apache Kafka\|Apache Kafka]], [[Web server\|Web server]], [[Database\|Database]], [[Frontend\|Frontend]]
 
