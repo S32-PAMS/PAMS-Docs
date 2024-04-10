@@ -142,7 +142,7 @@ This generates `message_pb2.py` and `timestamp_pb2.py` files. These files will b
 
 ### Docker
 
-> Required for running containerised applications such as the [[Server/MQTT Broker\|MQTT Broker]], [[Server/Rust Bridge\|Rust Bridge]], [[Server/Apache Kafka\|Apache Kafka]], and [[MongoDB\|MongoDB]].
+> Required for running containerised applications such as the [[Server/MQTT Broker\|MQTT Broker]], [[Server/Rust Bridge\|Rust Bridge]], [[Server/Apache Kafka\|Apache Kafka]], and [[Database\|Database]].
 > 
 > This section provides step-by-step instructions for installing Docker on an Ubuntu-based system and setting up Docker authentication with GPG credentials. It ensures a secure and optimised Docker environment for PAMS deployment.
 
@@ -188,9 +188,43 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
+#### Docker post-installation steps
+
+[Source](https://docker-docs.uclv.cu/engine/install/linux-postinstall/)
+
+If you don't want to preface the `docker` command with `sudo`, create a Unix group called `docker` and add users to it.
+
+```sh
+sudo groupadd docker
+sudo usermod -aG docker $USER
+```
+
+Log out and log back in. On Linux you can also run:
+
+```shell
+newgrp docker
+```
+
+For verification:
+
+```shell
+docker run hello-world
+```
+
+> [!tip]
+> If you also want the docker service to start when the system boots, you can do:
+> ```shell
+> sudo systemctl enable docker
+> ```
+> 
+> To disable this behaviour,
+> ```shell
+> sudo systemctl disable docker
+> ```
+
 #### Docker authentication setup
 
-For a secure Docker operation, generate a GPG key.
+For a secure Docker operation, generate a GPG key. This is not necessary, but good to have.
 
 Create a file named `gen_key` with the GPG Key configuration:
 
@@ -211,7 +245,7 @@ EOF
 ```
 
 > [!note]
-> The values in the fields should be changed to more secure values, according to your application instance. These are the default values we have used for our prototype.
+> The values in the fields **should be changed** to more secure values, according to your application instance. These are the default values we have used for our prototype.
 
 Generate the GPG Key using the configuration:
 
