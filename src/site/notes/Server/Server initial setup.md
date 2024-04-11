@@ -222,7 +222,7 @@ docker run hello-world
 > sudo systemctl disable docker
 > ```
 
-#### Docker authentication setup
+#### Docker authentication setup (optional)
 
 For a secure Docker operation, generate a GPG key. This is not necessary, but good to have.
 
@@ -284,39 +284,19 @@ Installation should have been completed above. If not, refer to Docker's documen
 docker-compose --version
 ```
 
-##### Create Docker Compose file
-
-Navigate to your project directory and create a file named `docker-compose.yml`. This file will define all the necessary services, networks and volumes for the PAMS architecture.
-
-> [!note]
-> For our prototype, we created our `docker-compose.yml` inside our project directory's `Rust` folder. Path is `Rust/docker-compose.yml`.
-
-```yml
-version: '3.8'
-services:
-```
-
-Services will be populated as the other components of the [[Architecture\|Architecture]] are set up.
-
-##### Running Docker Compose
-
-With your `docker-compose.yml` file ready, start your services by running:
-
-```bash
-docker-compose up -d
-```
-
 ### Kubectl
 Kubectl will be our kubernetes command line tool to deploy the [[Server/Apache Flink\|Apache Flink]] instance. 
 
 #### Installing Kubectl
 
-curl the latest kubectl release
+`curl` the latest `kubectl` release
+
 ```bash
-   curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 ```
 
-and install kubectl
+Install kubectl
+
 ```bash
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 ```
@@ -324,11 +304,13 @@ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 #### Install Kind
 
 Install golang first
+
 ```bash
 sudo apt install golang-go
 ```
 
-install kind with go
+Install kind with go
+
 ```bash
 go install sigs.k8s.io/kind@v0.22.0
 ```
@@ -356,4 +338,5 @@ sudo apt-get install kafkacat
 ```
 
 - Back to [[README\|README]]
-- Go set up [[Server/MQTT Broker\|MQTT Broker]]
+- Go create the rest of [[Architecture\|Architecture]]
+- Go run the prototype here: [[Guides/For platform users\|For platform users]]
