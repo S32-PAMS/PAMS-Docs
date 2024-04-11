@@ -97,3 +97,18 @@ This way, the functionality of the frontend will connect to the [[Frontend/Datab
 
 For how to run the camera server in a complete PAMS prototype implementation, see [[Guides/For Running Server#Run the Camera Servers\|For Running Server#Run the Camera Servers]].
 
+## Adding your Map
+
+Drop your GeoJSON layout file into the `frontend/components/MyMap` folder. Edit the import in `MyMap4.tsx` file in the same folder.
+
+```typescript
+import manualjson from "./<your geojson filename>.json";
+```
+
+Add the `png` of your layout into the `frontend/public` folder and edit the filename in the MyMap4 Object. Change the bounds of the object according to the metered dimensions of your map.
+
+```typescript
+<MyMap4 imglink=".\<filename>.png" boundsx={0} boundsy={3}/>
+```
+
+Push your changes to the PAMS-Frontend folder. Rerun [[Frontend/Frontend#Launch Prototype in Dev mode\|#Launch Prototype in Dev mode]].
