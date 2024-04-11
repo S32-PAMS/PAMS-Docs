@@ -1,11 +1,7 @@
 ---
-dg-publish: true
-dg-home: 
-tags:
-  - middleware
-  - archi
-  - message-queueing
+{"dg-publish":true,"permalink":"/server/apache-kafka/","tags":["middleware","archi","message-queueing"],"noteIcon":""}
 ---
+
 > [!abstract] Apache Kafka
 > This component is used for 2 purposes:
 > 1. Satisfies the **message-queuing** capability of our Message-Oriented Middleware [[Architecture\|Architecture]]. Theoretically, other message queues can also be used, but our prototype used Apache Kafka.
@@ -23,7 +19,7 @@ This setup assumes that [[Server/Server initial setup\|Server initial setup]] ha
 
 Apache Kafka has a Zookeeper dependency, so you need to first have that set up.
 
-# Setup Docker compose for Zookeeper
+## Setup Docker compose for Zookeeper
 
 Apache ZooKeeper is a centralised service for maintaining configuration information, and to do distributed synchronisation.
 
@@ -41,7 +37,7 @@ services:
       ZOOKEEPER_TICK_TIME: 2000
 ```
 
-# Setup Docker compose for Kafka
+## Setup Docker compose for Kafka
 
 We chose [Confluent](https://developer.confluent.io)'s Kafka implementation.
 
@@ -76,7 +72,7 @@ broker:
 
 The confluent image has several components but it's most prominent parts lie in it's environment. To set it up, it is important to have all these attributes. The broker_id helps differentiate it from other brokers that are set up for the solution. Zookeeper connect tells the broker where the zookeeper component is located. 
 
-## Connecting broker ports
+### Connecting broker ports
 
 `KAFKA_ADVERTISED_LISTENERS` and `KAFKA_LISTENER_SECURITY_PROTOCOL_MAP` are 2 attributes that must be present to set up broker logic. Advertised listeners advertises it's ports to consumers and producers that want to consume and produce from the broker respectively. The format of the listener is as follows
 
@@ -84,9 +80,9 @@ The confluent image has several components but it's most prominent parts lie in 
 < NAME >://< bootstrap-server >:< port >
 ```
 
-an example of this would be `INTERNAL://broker:29092`. Ensure that the ports chosen are exposed and can be seen from outside the docker container.
+An example of this would be `INTERNAL://broker:29092`. Ensure that the ports chosen are exposed and can be seen from outside the docker container.
 
-```
+```yml
 ports:
   - "10920:10920"
   - "9096:9096"
@@ -94,7 +90,7 @@ ports:
 
 It is important to note that if 2 different brokers are to be set up, their KAFKA_ADVERTISED_LISTENERS must have the same names/ Configurations. This can be seen in our docker compose file. 
 
-```
+```yml
 # broker 1:
 KAFKA_ADVERTISED_LISTENERS: INTERNAL://broker:29092, EXTERNAL://broker:10920, EXTERNAL2://localhost:9096
 
@@ -102,6 +98,6 @@ KAFKA_ADVERTISED_LISTENERS: INTERNAL://broker:29092, EXTERNAL://broker:10920, EX
 KAFKA_ADVERTISED_LISTENERS: INTERNAL://broker2:9094, EXTERNAL://broker2:9095, EXTERNAL2://localhost:9097
 ```
 
-localhost is currently exposed as many of our frontend components run locally. If the frontend components are ever dockerized, it is ideal to remove the external2 ports.
+`localhost` is currently exposed as many of our frontend components run locally. If the frontend components are ever Dockerised, it is ideal to remove the external2 ports.
 
 Now you can proceed to [[Server/Apache Flink\|Apache Flink]]
