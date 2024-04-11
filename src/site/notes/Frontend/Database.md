@@ -1,7 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/database/","tags":["software","archi","data"],"noteIcon":""}
+dg-publish: true
+tags:
+  - software
+  - archi
+  - data
 ---
-
 > [!abstract] Database
 > This is the persistent storage for the system.
 > It stores:
