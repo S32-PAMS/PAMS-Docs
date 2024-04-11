@@ -99,7 +99,10 @@ For how to run the camera server in a complete PAMS prototype implementation, se
 
 ## Adding your Map
 
-Drop your GeoJSON layout file into the `frontend/components/MyMap` folder. Edit the import in `MyMap4.tsx` file in the same folder.
+> [!important]
+> This assumes you have completed setting up the [[Frontend/Map\|Map]]. If not, go there now, before integrating it into the user interface for visualisation!
+
+Drop your `GeoJSON` layout file into the `frontend/components/MyMap` folder. Edit the import in `MyMap4.tsx` file in the same folder.
 
 ```typescript
 import manualjson from "./<your geojson filename>.json";
