@@ -1,7 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/server/mqtt-broker/","tags":["middleware","archi","message-passing"],"noteIcon":""}
+dg-publish: true
+dg-home: 
+tags:
+  - middleware
+  - archi
+  - message-passing
 ---
-
 > [!abstract] MQTT Broker
 > This is responsible for the **message-passing** functionality of our message-oriented middleware [[Architecture\|Architecture]]. As long as this function is satisfied, it does not matter the choice of the broker.
 > Common options for MQTT Broker:
