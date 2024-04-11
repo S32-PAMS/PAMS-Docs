@@ -18,7 +18,7 @@ import { io } from 'socket.io-client';
 export const socket = io('http://localhost:8080');
 ```
 
-In the MyMap component, if socket is connected, read from all sockets and parse data based on the flags. 
+In the `MyMap` component, if socket is connected, read from all sockets and parse data based on the flags.
 
 ```javascript
 useEffect(() => {
@@ -28,14 +28,15 @@ useEffect(() => {
 
 ## Room determination based on coordinates
 
-If a new tag data packet arrives, the room/GeoJSON layer the coordinate is currently in needs to be determined. 
+If a new tag data packet arrives, the room/[GeoJSON](https://geojson.org) layer the coordinate is currently in needs to be determined. 
 
-Parse the json data previously produced by flink.
+Parse the JSON data previously produced by [[Server/Apache Flink\|Apache Flink]].
+
 ```javascript
 let cood: FlinkData = JSON.parse(coodinput);
 ```
 
-Check each layer current rendered on the Leaflet Map with the GeoJSON file to see if the coordinate is a point in the polygon. Here `PointInPolygon` is a standard math equation checking for boundary crossing conditions to determine if the current point belongs to a polygon.
+Check each layer current rendered on the [Leaflet](https://leafletjs.com) Map with the [GeoJSON](https://geojson.org) file to see if the coordinate is a point in the polygon. Here `PointInPolygon` is a standard math equation checking for boundary crossing conditions to determine if the current point belongs to a polygon.
 
 ```javascript
 mapref.eachLayer((layer) => {
@@ -46,7 +47,7 @@ mapref.eachLayer((layer) => {
         let ogRoom = tagMap.get(cood.tagid);
 ```
 
-If the point belongs to the polygon, the point is then checked for specifics - the detachment status and it's old room status. Colours and tags of layer objects are then updated accordingly. 
+If the point belongs to the polygon, the point is then checked for specifics - the detachment status and it's old room status. Colours and tags of layer objects are then updated accordingly.
 
 ## Logic system to reset room colour
 
@@ -82,13 +83,13 @@ let count = roomBool.get(roomName)
 
 The update colour function is as follows. The function takes in the layer it is to manipulate, the room information and the colour it needs to update. 
 
-The original layer is removed
+The original layer is removed:
 
 ```javascript
 mapref.removeLayer(layer);
 ```
 
-The polygon is then rebuilt with Leaflet `LatLngExpression` objects and added to the current rendered map, creating the update colour effect.
+The polygon is then rebuilt with [Leaflet](https://leafletjs.com) `LatLngExpression` objects and added to the current rendered map, creating the update colour effect.
 
 ```javascript
 function UpdateColour(layer:L.Layer, room: Room, color:string){
