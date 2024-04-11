@@ -81,7 +81,8 @@ The shell will print all data consumed from `packet_data` and `packet_alive`.
 ### Create the Flink bridge
 
 #### Install Helm, Kubectl and Kind on your device.
-See [[Server/Server initial setup\|Server initial setup]] 's Kubectl for more.
+
+See [[Server/Server initial setup#Kubectl\|Server initial setup#Kubectl]] for more.
 
 ```bash
 cd PAMS-Software
