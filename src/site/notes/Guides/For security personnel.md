@@ -5,7 +5,7 @@
 > [!abstract] Security manual
 > This manual provides comprehensive documentation of the security measures implemented in the Personnel and Asset Monitoring System (PAMS). It serves as a guide for setting up and maintaining the system's security features.
 
-PAMS employs a multi-layered architecture designed to track and visualize the location data of tagged assets. The system integrates hardware components like ESP32 microcontrollers ([[Tags\|Tags]], [[Anchors\|Anchors]]) and software components including [[Server/MQTT Broker\|MQTT Broker]], [[Server/Apache Kafka\|Apache Kafka]], and a [[Web server\|Web server]], among others.
+PAMS employs a multi-layered architecture designed to track and visualize the location data of tagged assets. The system integrates hardware components like ESP32 microcontrollers ([[Tags\|Tags]], [[Anchors\|Anchors]]) and software components including [[Server/MQTT Broker\|MQTT Broker]], [[Server/Apache Kafka\|Apache Kafka]], and a [[Server/Node bridge\|Node bridge]], among others.
 
 # Disclaimer
 
