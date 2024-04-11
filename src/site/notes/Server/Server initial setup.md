@@ -306,6 +306,54 @@ With your `docker-compose.yml` file ready, start your services by running:
 docker-compose up -d
 ```
 
+### Kubectl
+Kubectl will be our kubernetes command line tool to deploy the [[Server/Apache Flink\|Apache Flink]] instance. 
+
+#### Installing Kubectl
+
+curl the latest kubectl release
+```bash
+   curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+```
+
+and install kubectl
+```bash
+sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+```
+
+#### Install Kind
+
+Install golang first
+```bash
+sudo apt install golang-go
+```
+
+install kind with go
+```bash
+go install sigs.k8s.io/kind@v0.22.0
+```
+
+#### Install Helm
+
+```bash
+curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+chmod 700 get_helm.sh
+./get_helm.sh
+```
+
+#### Ensure all packages have been downloaded
+
+```bash
+kubectl version --client
+```
+
+### KafkaCat installation
+
+KafkaCat is used for sanity checks throughout the pipeline. Simply install with sudo apt-get. KafkaCat is a command line consumer and producer of Kafka Clients. 
+
+```bash
+sudo apt-get install kafkacat
+```
 
 - Back to [[README\|README]]
 - Go set up [[Server/MQTT Broker\|MQTT Broker]]
