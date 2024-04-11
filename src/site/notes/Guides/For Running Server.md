@@ -7,6 +7,8 @@
 
 # MQTT, Rust and Kafka broker setup
 
+These are [[Architecture#Middleware components\|Architecture#Middleware components]].
+
 ```bash 
 cd PAMS-Middleware/Rust
 docker compose up
@@ -24,7 +26,6 @@ Ensure the CLI returns "Create topic <>" for each topic created. If this fails, 
 docker exec -ti broker bash
 >> kafka-topics --create --topic packet_data --if-not-exists --bootstrap-server broker:10920
 >> kafka-topics --create --topic packet_alive --if-not-exists --bootstrap-server broker:10920
->> kafka-topics --create --topic anchor_cood --if-not-exists --bootstrap-server broker:10920
 
 docker exec -ti broker2 bash
 >> kafka-topics --create --topic out_data --if-not-exists --bootstrap-server broker2:9095
@@ -55,10 +56,32 @@ docker exec -ti rustbridge bash
 >> cargo run -p producer
 ```
 
+## Sanity Check for Rust bridge data in kafka
+
+This section assumes KafkaCat has been downloaded as per [[Server/Server initial setup#KafkaCat installation\|Server initial setup#KafkaCat installation]]. This section can be run in any shell on the machine.
+
+To ensure the Kafka topics have been successfully created.
+
+```bash
+kafkacat -b localhost:9096 -L
+```
+
+The shell should print a list of all the topics created. 
+
+To check if data is being sent to the correct Kafka topics.
+
+```bash
+kafkacat -b localhost:9096 -t packet_data
+kafkacat -b localhost:9096 -t packet_alive
+```
+
+The shell will print all data consumed from `packet_data` and `packet_alive`.
+
 # Setup Flink, Node bridge and Frontend
 ### Create the Flink bridge
 
 #### Install Helm, Kubectl and Kind on your device.
+See [[Server/Server initial setup\|Server initial setup]] 's Kubectl for more.
 
 ```bash
 cd PAMS-Software
@@ -78,9 +101,9 @@ EOF
 
 #### Install the flink-kubernetes operator
 
-1. deploy the certificate manager (for the operator's webhook)
-2. add the helm repository for the operator
-3. install the operator using the provided helm chart
+1. Deploy the certificate manager (for the operator's webhook)
+2. Add the helm repository for the operator
+3. Install the operator using the provided helm chart
 
 ```bash
 > kubectl create -f https://github.com/cert-manager/cert-manager/releases/download/v1.8.2/cert-manager.yaml
@@ -88,7 +111,7 @@ EOF
 > helm install flink-kubernetes-operator flink-operator-repo/flink-kubernetes-operator
 ```
 
-Run `kubectl get pods` and wait for 2/2 containers to run
+Run `kubectl get pods` and wait for 2/2 containers to run.
 
 #### Build the existing docker file and upload image to kind
 
@@ -103,7 +126,7 @@ Run `kubectl get pods` and wait for 2/2 containers to run
 ```bash
 cd PSQL_DB
 docker compose build --no-cache
-docker compse up
+docker compose up
 ```
 
 #### Run the Frontend
@@ -132,31 +155,49 @@ npm i
 node server.js
 ```
 
+## Sanity Check for PyFlink data in kafka
+
+This section assumes KafkaCat has been downloaded as per Server initial setup. This section can be run in any shell on the machine.
+
+To check if data is being sent to the correct Kafka topics.
+
+```bash
+kafkacat -b localhost:9097 -t out_data
+kafkacat -b localhost:9097 -t out_alive
+```
+
+The shell will print all data consumed from `packet_data` and `packet_alive`.
+
 ---
 # Troubleshooting
 
 ## 1.1 broker/broker2 infinite logs
-- shut down just one broker. then start the broker back up. 
+
+- Shut down just one broker. then start the broker back up. 
 - If the issue persists, shut down zookeeper with the 2 brokers before starting all 3 services back up.
 - The issue occurs since broker and broker2 are both fighting for similar resources in zookeeper
 
 ## 1.2 Kafka topics are not created
-- find the broker the topic was wrongly created on and run a delete kafka topic command. retry the create.
+
+- Find the broker the topic was wrongly created on and run a delete kafka topic command. Fetry the create.
 
 ```
->> kafka-topics --delete --topic topic_name --bootstrap-server brooker_name
+>> kafka-topics --delete --topic topic_name --bootstrap-server broker_name
 ```
 
 - If the situation persists, or you are unable to find the broker the topic was initially created on, delete zookeeper and both brokers and start the process again.
 
 ## 1.3 No messages at Rust bridge
-- Check your anchor's IP is allocated correctly
-- Check your main.rs file's IP is allocated correctly
-- Conduct a sanity check to ensure your network is ok and information can be sent to the MQTT broker.
-- If all else fails, reset the Rust bridge with a docker compose down, deleting any relevant volumes.
 
-## 1.4 Posgres, frontend cannot connect
-- This usually occurs when posgres is started again after an improper shutdown. To resolve this, you will need to restart the posgres instance on the device.
+- Check your anchor's IP is allocated correctly
+- Check your `main.rs` file's IP is allocated correctly
+- Conduct a sanity check to ensure your network is ok and information can be sent to the [[Server/MQTT Broker\|MQTT Broker]].
+- If all else fails, reset the Rust bridge with a `docker compose down`, deleting any relevant volumes.
+
+## 1.4 Postgres, frontend cannot connect
+
+- This usually occurs when postgres is started again after an improper shutdown. To resolve this, you will need to restart the postgres instance on the device.
+
 ```bash
 cd PSQL_DB
 docker compose down
@@ -164,5 +205,5 @@ docker compose down
 docker compose up
 ```
 
-- If this issue persists, delete the larger posgres server on your machine. 
+- If this issue persists, delete the larger postgres server on your machine. 
 
