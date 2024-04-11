@@ -1,7 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/server/apache-flink/","tags":["software","parallel-processing","data-processing"],"noteIcon":""}
+dg-publish: true
+dg-home: 
+tags:
+  - software
+  - parallel-processing
+  - data-processing
 ---
-
 > [!abstract] Apache Flink
 > This component is responsible for processing data to generate localization. Apache flink is chosen for it's ability to parallelize data processes, allowing us to scale the number of tags on assets.
 
@@ -9,10 +13,10 @@
 This setup assumes that [[Server/Server initial setup\|Server initial setup]] has been completed.
 
 > [!note]
-> - Receives input from [[Server/Apache Kafka\|Apache Kafka]] (b)
+> - Receives input from [[Server/Apache Kafka\|Apache Kafka]] (broker1)
 > - Port usage:
 > 	- `10920` is used to communicate from Kafka to [[Server/Apache Flink\|Apache Flink]]
-> 	- `9094` is used to communicate between [[Server/Apache Flink\|Apache Flink]] to Kafka to [[Web server\|Web server]]
+> 	- `9094` is used to communicate between [[Server/Apache Flink\|Apache Flink]] to Kafka to [[Server/Node bridge\|Node bridge]]
 
 Deploying Apache Flink in python requires the additional installation of helm, kubectl and kind. 
 
