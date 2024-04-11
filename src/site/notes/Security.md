@@ -1,7 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/security/","tags":["security"],"noteIcon":""}
+dg-publish: true
+dg-home: 
+tags:
+  - security
 ---
-
 > [!abstract] Security design and considerations
 > This document outlines the security designs put into the system.
 
