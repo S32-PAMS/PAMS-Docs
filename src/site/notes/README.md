@@ -35,5 +35,5 @@ Individual components
 
 - #hardware: [[Tags\|Tags]], [[Anchors\|Anchors]]
 - #middleware : [[Server/MQTT Broker\|MQTT Broker]], [[Server/Rust Bridge\|Rust Bridge]], [[Server/Apache Kafka\|Apache Kafka]]
-- #software : [[Server/Apache Flink\|Apache Flink]], [[Server/Apache Kafka\|Apache Kafka]], [[Server/Node bridge\|Node bridge]], [[Frontend/Database\|Database]], [[Frontend/Frontend\|Frontend]]
+- #software : [[Server/Apache Flink\|Apache Flink]], [[Server/Apache Kafka\|Apache Kafka]], [[Server/Node bridge\|Node bridge]], [[Frontend/Database\|Database]], [[Frontend/Frontend\|Frontend]], [[Frontend/Map\|Map]]
 
