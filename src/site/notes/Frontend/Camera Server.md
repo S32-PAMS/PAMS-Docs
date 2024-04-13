@@ -1,12 +1,7 @@
 ---
-dg-publish: true
-tags:
-  - archi
-  - software
-  - camera
-  - streaming
-  - video
+{"dg-publish":true,"permalink":"/frontend/camera-server/","tags":["archi","software","camera","streaming","video"],"noteIcon":""}
 ---
+
 
 
 > [!attention]
@@ -91,8 +86,6 @@ As you can see, there are many files under the `cam_files/` folder. These files 
 > ```bash
 > docker build --build-arg GITHUB_PAT="your_pat_here" -t your-image-name
 > ```
-
-
 
 ### RSTP Conversion
 
