@@ -1,7 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/guides/for-testers/","tags":["run","middleware","software"],"noteIcon":""}
+dg-publish: true
+dg-home: 
+tags:
+  - run
+  - middleware
+  - software
 ---
-
 > [!abstract] How to run the test code
 > This page contains instructions on how to run loadtesting.
 
@@ -32,8 +36,8 @@ It is not sensible to create 100 tags to find the upper limit of our system. Ins
 The test code presumes a position in 6 different rooms, and 3 known anchor coordinates. generating a random room for each run.
 
 ```python
-roomcoods = [[1.5, 0.5], [1.5, 1.5], [1.5, 2.5], [0.5, 0.5], [0.5, 1.5], [0.5, 2.5]]
-anchorcoods = [[2.0,0.0], [0.0,2.0], [2.0,3.0]]
+roomcoods = [[1.5, 0.5], [1.5, 1.5], [1.5, 2.5], [0.5, 0.5], [0.5, 1.5], [0.5, 2.5\|1.5, 0.5], [1.5, 1.5], [1.5, 2.5], [0.5, 0.5], [0.5, 1.5], [0.5, 2.5]]
+anchorcoods = [[2.0,0.0], [0.0,2.0], [2.0,3.0\|2.0,0.0], [0.0,2.0], [2.0,3.0]]
 ```
 
 For each run, a distance sent is mocked as data consumed by each anchor.
