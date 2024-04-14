@@ -177,6 +177,45 @@ You should see a login screen, click on "Sign Up Here" to create an account and 
 
 ![signInScreen.png](/img/user/Attachments/frontend-users/signInScreen.png)
 
+After registering, you will be redirected to `localhost:3000/`. 
+
+## Initiate tags
+
+Visit `localhost:3000/map` to initiate the tags. This is where you will monitor the location of the tags.    
+  
+The image below shows when the tag is detected to be out of its belonged room/area, the area on the map will be turned into red, notifying users. It will also prompt the user to click and view the camera footage.
+
+![outOfRoom.png](/img/user/Attachments/frontend-users/outOfRoom.png)
+
+The image below shows when the tag is detected to be detached, the area on the map will be turned into blue, notifying users. It will also prompt the user to click and view the camera footage.
+
+![detached.png](/img/user/Attachments/frontend-users/detached.png)
+
+## Tagsboard
+
+Visit `localhost:3000/tagsboard`.
+
+The image below shows the page to monitor all the tags. Highlighted box 1 shows an active tag on low battery and is attached to an object. Highighted box 2 shows an active tag which has been detached, notifying the user.
+
+![tagsboard.png](/img/user/Attachments/frontend-users/tagsboard.png)
+
+The user will also be able to view the footage of camera associated to each tags.
+
+![[cam_demo.mp4]]
+
+> [!note]
+> The system admin will need to manually associate each tag to each camera depending on the set up of the environment.
+
+## Anchorboard
+
+The image below shows how a user can add the anchors from the web app. This is crucial because the anchors will serve as beacons, drawing polygons in the physical room and keeping track of the information of the tags. Hence, the system admin will need to manually set known coordinates of the anchors when setting up the PAMS system in a room.
+
+![addanchor.png](/img/user/Attachments/frontend-users/addanchor.png)
+
+The anchor board also serves to alert users when an anchor has been tampered with and is no longer sending or receiving liveness.
+
+![anchordead.png](/img/user/Attachments/frontend-users/anchordead.png)
+
 ---
 # Troubleshooting
 
