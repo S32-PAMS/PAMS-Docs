@@ -37,6 +37,8 @@ The STEP models can be exported into STL files and converted into gcode using th
 
 Once the Anchor models are printed they must be assembled as such.
 
+![Anchor Assembly.png](/img/user/Attachments/hardware/Anchor%20Assembly.png)
+
 Once the tag is completed if the ESP32 has not already been setup, you can upload the code from the following [link](https://github.com/S32-PAMS/PAMS-Hardware/tree/main/anchor_code).
 
 - Now move on to [[Hardware/Anchor Setup\|Anchor Setup]]
