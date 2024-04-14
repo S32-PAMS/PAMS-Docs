@@ -22,7 +22,7 @@ For the purposes of understanding how placement of the tags would work we have i
 
 In a standard square 4x4 room, the diagonal of the room has a length of 5.65m. Since this is less than our maximal radius of 7m required for anchor measurement, placing an anchor in the 3 corners respectively would provide sufficient information to determine if a tag is in a room (Refer to Figure 1).
 
-![Room Placement]( Room_Placement.jpg "Room Placement")
+![Room_Placement.jpg](/img/user/Attachments/hardware/Room_Placement.jpg)
 
 *Figure 1: Sample placement of Tags in a 4x4 room where the three anchors are signified by the boxes marked 1, 2 and 3*
 
@@ -33,7 +33,7 @@ In a larger system such as the 20m corridor shown, due to the high coverage of o
 > [!note]
 > The anchors within the room also contribute to the tracking of the tags in the corridor, but between the walls there is still an interference of about 2.5m. However since this does not affect the localisation of the room where the Tag is placed, it is inconsequential.
 
-![Corridor Placement]( Corridor_Placement.jpg "Corridor Placement")
+![Corridor_Placement.jpg](/img/user/Attachments/hardware/Corridor_Placement.jpg)
 
 *Figure 2: Sample Placement of Tags in a corridor 20m long where the anchors are signified by the boxes numbered 1 to 6*
 
