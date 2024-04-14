@@ -1,13 +1,11 @@
 ---
-dg-publish: true
-dg-home: 
-tags:
-  - security
+{"dg-publish":true,"permalink":"/security/","tags":["security"],"noteIcon":""}
 ---
+
 > [!abstract] Security design and considerations
 > This document outlines the security designs put into the system.
 
-Implementation manual: [[Guides/For security personnel\|For security personnel]]
+Implementation manual: [[Guides/For Security Personnel\|For Security Personnel]]
 
 # Safety considerations
 
@@ -64,12 +62,12 @@ Image security
 > [!tldr]
 > These are the design considerations to ensure hardware safety, which includes tamper-proofing and the option to pass messages with TLS secured links.
 
-- [[Tags\|Tags]]
+- Tags
 	- Physical security
 		- Accelerometer and force sensor prevents physical tampering by giving signals on movement and detachment
 	- UWB link
 		- Time of Flight and Ranging, while allowing functional calculation of distance between tag and anchor, also verifies the physical proximity of devices, making it challenging for attackers to spoof a device's location
-- [[Anchors\|Anchors]]
+- Anchors
 	- Physical security
 		- Secure installation (should install anchors in locations not easily accessible, up to the user)
 	- WiFi + MQTT link
