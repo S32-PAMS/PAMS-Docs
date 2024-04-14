@@ -11,21 +11,16 @@
 
 The system architecture is **designed to collect, process, and visualise location data** for personnel or assets attached to our PAMS tags. It integrates various technologies, including ESP32 microcontrollers, MQTT for messaging, Apache Kafka for message queuing, Apache Flink for stream processing, and a ExpressJS web server for data management and frontend interaction.
 
-- For an example to use the prototype, see [[Guides/For platform users\|For platform users]]
-- To make the [[Architecture#Hardware components\|#Hardware components]], follow [[For hardware engineers\|For hardware engineers]].
-- To make the [[Architecture#Middleware components\|#Middleware components]] and [[Architecture#Software components\|#Software components]], follow [[For software engineers\|For software engineers]]
-- To set up security in the system, follow [[Guides/For security personnel\|For security personnel]]
-
 ## Hardware components
 
 ![hardwarearchi.png](/img/user/Attachments/archi/hardwarearchi.png)
 
 Design is minimal to reduce weight and bulk.
 
-| Component   | Description and role                                                                                                                                                                                                                                         |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [[Tags\|Tags]]    | Equipped with ESP32 microcontrollers and DW1000 UWB modules<br><br>Broadcast unique data packets that include<br>  - Detachment status<br>  - Battery level<br>  - Distance from anchor<br><br>These tags are attached to objects which should be protected. |
-| [[Anchors\|Anchors]] | Also equipped with ESP32 microcontrollers and DW1000 UWB modules<br><br>Stationed at fixed positions in the room<br>Receive data from tags<br>Responsible for forwarding this information to the system's backend via WiFi, using MQTT protocol              |
+| Component | Description and role                                                                                                                                                                                                                                                                                        |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Tags      | Equipped with ESP32 microcontrollers and DW1000 UWB modules<br><br>Broadcast unique data packets that include<br>  - Detachment status<br>  - Battery level<br>  - Distance from anchor<br><br>These tags are attached to objects which should be protected.<br><br>- [[Hardware/Building a Tag\|Building a Tag]]<br>- [[Hardware/Tag Setup\|Tag Setup]] |
+| Anchors   | Also equipped with ESP32 microcontrollers and DW1000 UWB modules<br><br>Stationed at fixed positions in the room<br>Receive data from tags<br>Responsible for forwarding this information to the system's backend via WiFi, using MQTT protocol<br><br>- [[Hardware/Building an Anchor\|Building an Anchor]]<br>- [[Hardware/Anchor Setup\|Anchor Setup]]       |
 
 ## Middleware components
 
