@@ -169,6 +169,14 @@ kafkacat -b localhost:9097 -t out_alive
 
 The shell will print all data consumed from `packet_data` and `packet_alive`.
 
+# Using the Frontend
+
+Assume you are running the web app locally at port 3000, visit `localhost:3000` on your browser.   
+
+You should see a login screen, click on "Sign Up Here" to create an account and start using our web app. ("Sign in with Google" option is provided as a template for future handler to implement if there's a need for it as OAuth was built-in to our web app.)
+
+![signInScreen.png](/img/user/Attachments/frontend-users/signInScreen.png)
+
 ---
 # Troubleshooting
 
