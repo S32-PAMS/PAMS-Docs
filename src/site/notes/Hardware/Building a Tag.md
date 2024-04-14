@@ -1,9 +1,7 @@
 ---
-dg-publish: true
-tags:
-  - hardware
-  - tag
+{"dg-publish":true,"permalink":"/hardware/building-a-tag/","tags":["hardware","tag"],"noteIcon":""}
 ---
+
 > [!abstract] Tag prototype creation instructions
 > This guide teaches you how to build a tag. The tag is attached to the object of interest and acts as the tracker attached to it. It constantly sends messages back and forth from anchor and tag using TWR to measure the distance between the anchor and tag. The anchor and tag combination act as the base level units for the system.
 
