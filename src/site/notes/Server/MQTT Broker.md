@@ -1,11 +1,7 @@
 ---
-dg-publish: true
-dg-home: 
-tags:
-  - middleware
-  - archi
-  - message-passing
+{"dg-publish":true,"permalink":"/server/mqtt-broker/","tags":["middleware","archi","message-passing"],"noteIcon":""}
 ---
+
 > [!abstract] MQTT Broker
 > This is responsible for the **message-passing** functionality of our message-oriented middleware [[Architecture\|Architecture]]. As long as this function is satisfied, it does not matter the choice of the broker.
 > Common options for MQTT Broker:
@@ -18,7 +14,7 @@ This setup assumes that the setup in [[Server/Server initial setup\|Server initi
 You also need a text editor to create and edit the configuration and Docker Compose files.
 
 > [!note]
-> - Receives input from [[Anchors\|Anchors]]
+> - Receives input from [[Hardware/Anchor Setup\|anchors]]
 > - Passes output to [[Server/Rust Bridge\|Rust Bridge]]
 > - [MQTT Protocol](https://mqtt.org) uses port `1883` for default use, and port `8883` for MQTTS (MQTT with TLS)
 
@@ -47,7 +43,7 @@ services:
 	  - <path to MQTT broker private key>
 ```
 
-This assumes that [[Guides/For security personnel\|the secure implementation]] is set up. Use the `openssl` version of the image.
+This assumes that [[Guides/For Security Personnel\|the secure implementation]] is set up. Use the `openssl` version of the image.
 
 ## NanoMQ
 
