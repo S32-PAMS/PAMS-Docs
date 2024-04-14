@@ -1,7 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/guides/for-running-server/","tags":["run","middleware","software"],"noteIcon":""}
+dg-publish: true
+dg-home: 
+tags:
+  - run
+  - middleware
+  - software
 ---
-
 > [!abstract] How to set up the backend for the prototype
 > This page contains instructions on how to get our prototype to run.
 
@@ -151,9 +155,17 @@ node app.js
 #### Run the Camera Servers
 
 ``` bash
-cd Cam_Server
+cd Cam_Server/cam_files
 npm i
 node server.js
+```
+
+in a separate terminal, run
+
+```bash
+# Run FFmpeg to convert RTSP stream to HLS format.
+# Replace "192.168.195.105/stream" with your actual RTSP stream URL if different.
+ffmpeg -i rtsp://CameraAccountName:CameraAccountPassword@192.168.195.105/stream1 -c:v copy -c:a copy -f hls -hls_time 2 -hls_playlist_type event stream.m3u8 
 ```
 
 ## Sanity Check for PyFlink data in kafka
@@ -190,6 +202,12 @@ The image below shows when the tag is detected to be out of its belonged room/ar
 The image below shows when the tag is detected to be detached, the area on the map will be turned into blue, notifying users. It will also prompt the user to click and view the camera footage.
 
 ![detached.png](/img/user/Attachments/frontend-users/detached.png)
+
+## Initiate anchors
+
+Anchors first need to be added via the frontend. visit localhost:3000/anchorsboard and click the + button at the top left corner. Use the popup available to add anchor data. For a more visual explanation, see [[UserManual#Anchorboard\|UserManual#Anchorboard]].
+
+Additionally, the anchor ids and coordinates must be added into the static dictionary in the Flink file for Flink to retrieve information from, specifically into the variable anchorDict in runStream.py. When new anchors are added, the Flink instance should be redeployed to reflect updated changes. More information can be found in [[Server/Apache Flink#Add Anchors\|Apache Flink#Add Anchors]]
 
 ## Tagsboard
 
