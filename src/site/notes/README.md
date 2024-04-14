@@ -20,20 +20,38 @@ Let PAMS resolve your asset tracking needs.
 
 **Get started** here
 
-- [[Hardware initial setup\|Hardware initial setup]]
-- [[Server/Server initial setup\|Server initial setup]]
+- [[Guides/For Building PAMS\|For Building PAMS]]
+- [[Guides/For Security Personnel\|For Security Personnel]]
+- [[Guides/For Running Hardware\|For Running Hardware]]
+- [[Guides/For Running Server\|For Running Server]]
+- [[Guides/For Testers\|For Testers]]
 
-| Manual                     | Description                                                                                                                                            |
-| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [[Guides/For platform users\|For platform users]]     | Guide on how to set up and run an instance of PAMS as a user<br>- [[Hardware initial setup\|Hardware initial setup]]<br>- [[Server/Server initial setup\|Server initial setup]]<br>- [[Guides/For Running Server\|For Running Server]] |
-| [[Guides/For security personnel\|For security personnel]] | Guide on how to create and administer the [[Security\|Security]] architecture of PAMS for your instance                                                          |
-| [[For hardware engineers\|For hardware engineers]] | Guide on how to create your own PAMS Tags and Anchors, as well as link it up to PAMS middleware                                                        |
-| [[For software engineers\|For software engineers]] | Guide on how to create the middleware, backend, databases and frontend for the PAMS                                                                    |
-| [[Guides/For testing users\|For testing users]]      | Guide on how to perform tests on the PAMS prototype                                                                                                    |
+---
 
-Individual components
+# How to control this manual
 
-- #hardware: [[Tags\|Tags]], [[Anchors\|Anchors]]
-- #middleware : [[Server/MQTT Broker\|MQTT Broker]], [[Server/Rust Bridge\|Rust Bridge]], [[Server/Apache Kafka\|Apache Kafka]]
-- #software : [[Server/Apache Flink\|Apache Flink]], [[Server/Apache Kafka\|Apache Kafka]], [[Server/Node bridge\|Node bridge]], [[Frontend/Database\|Database]], [[Frontend/Frontend\|Frontend]], [[Frontend/Map\|Map]]
+Repositories: 
+- [Manual Content](https://github.com/S32-PAMS/PAMS-ManualContent)
+- [Public Hosting](https://github.com/S32-PAMS/PAMS-Docs)
 
+Only Manual Content needs to be edited. Just merge PRs for Public Hosting repository whenever the package manager bumps versioning updates.
+
+## Opening manual locally
+
+Clone the [Manual Content](https://github.com/S32-PAMS/PAMS-ManualContent) repository. You can choose any markdown editor to open their files, but for full linking functionality like you see in the manual website, download [Obsidian](https://obsidian.md/) and open this repository as an Obsidian Vault, following the setup instructions.
+
+You can now view the manual.
+
+## Hosting manual online
+
+Clone the [Manual Content](https://github.com/S32-PAMS/PAMS-ManualContent) repository. Download [Obsidian](https://obsidian.md/) and open this repository as an Obsidian Vault, following the setup instructions.
+
+Once you are inside Obsidian and have opened the repository as above, go to Settings.
+
+![Obsidian settings.png](/img/user/Attachments/Obsidian%20settings.png)
+
+You first need to allow Community Plugins, and then Browse and Install at least the `Digital Garden` plugin. The `Git` plugin may help you if you don't wish to do git operations in a separate terminal.
+
+Once you have the Digital Garden plugin, proceed to continue from step 5 of [this guide](https://dg-docs.ole.dev/getting-started/01-getting-started/), as steps 1 to 4 have been already done with the `capstonepams` Github account (that's why we can show you a manual as a website).
+
+You can now maintain our manual! To stop hosting, simply go to vercel in the guide above for Digital Garden plugin and just stop hosting there.
