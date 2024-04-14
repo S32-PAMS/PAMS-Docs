@@ -61,7 +61,7 @@ The `Tag Casing (Latch)` contains the extra detachment mechanism. This also need
 
 Once the bead is installed the latch must be loaded into the back casing to make sure that the pressure sensor can have force exerted when it is attached to an object. The latch can be added in the way shown in Fig 5.
 
-![Latch_assembly.png](/img/user/Hardware/Build%20and%20Setup/Latch_assembly.png)
+![Latch_assembly.png](/img/user/Attachments/hardware/Latch_assembly.png)
 
 *Fig 5: Latch Assembly*
 
