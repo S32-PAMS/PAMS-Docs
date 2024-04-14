@@ -1,7 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/readme/","tags":["home","gardenEntry","gardenEntry"],"noteIcon":""}
+dg-publish: true
+dg-home: "true"
+tags:
+  - home
 ---
-
 # PAMS
 
 > [!abstract] Personnel and Artefact Monitoring System (PAMS)
@@ -21,7 +23,7 @@ Let PAMS resolve your asset tracking needs.
 **Get started** here
 
 - [[Guides/For Building PAMS\|For Building PAMS]]
-- [[Guides/For Security Personnel\|For Security Personnel]]
+- [[Guides/For security personnel\|For Security Personnel]]
 - [[Guides/For Running Hardware\|For Running Hardware]]
 - [[Guides/For Running Server\|For Running Server]]
 - [[Guides/For Testers\|For Testers]]
