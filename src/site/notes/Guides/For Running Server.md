@@ -201,8 +201,7 @@ The image below shows the page to monitor all the tags. Highlighted box 1 shows 
 
 The user will also be able to view the footage of camera associated to each tags.
 
-
-<video src="../Attachments/frontent-users/cam_demo.mp4" width="320" height="240" controls></video>
+![cam_gif.gif](/img/user/Attachments/frontend-users/cam_gif.gif)
 
 
 > [!note]
