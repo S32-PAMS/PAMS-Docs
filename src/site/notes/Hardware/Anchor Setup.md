@@ -688,7 +688,7 @@ Compile all the code described above. The arduino `.ino` file can be found in th
 
 ## Security Additions
 
-While the above code allows for basic anchor functionality, if the anchor needs to be equipped with greater security features. Some of these features have already been implemented into the code, mainly to enable TLS communication between the Anchor and MQTT broker. The TWR communication is already more or less protected from relay and replay attacks due to most of the calculations being conducted using timestamps.
+While the above code allows for basic anchor functionality, the anchor needs to be equipped with greater security features. Some of these features have already been implemented into the code, mainly to enable TLS communication between the Anchor and MQTT broker. The TWR communication is already more or less protected from relay and replay attacks due to most of the calculations being conducted using timestamps.
 
 ### TLS
 
