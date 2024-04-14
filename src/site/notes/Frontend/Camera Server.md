@@ -1,7 +1,12 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/camera-server/","tags":["archi","software","camera","streaming","video"],"noteIcon":""}
+dg-publish: true
+tags:
+  - archi
+  - software
+  - camera
+  - streaming
+  - video
 ---
-
 
 
 > [!attention]
