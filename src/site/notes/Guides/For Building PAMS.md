@@ -1,7 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/guides/for-building-pams/","noteIcon":""}
+dg-publish: true
+tags:
 ---
-
 > [!summary] Index for building PAMS
 > This is an index for what to do to create PAMS. Refer to [[Architecture\|Architecture]] to see how PAMS works together.
 
