@@ -51,7 +51,7 @@ sudo apt install protobuf-compiler -y
 ```
 
 This is crucial for the following components in our prototype:
-- [[Anchors\|Anchors]]
+- [[Hardware/Anchor Setup\|Anchors]]
 - [[Server/Apache Flink\|Apache Flink]]
 
 #### Creation of standard `.proto` file for messages
@@ -59,7 +59,7 @@ This is crucial for the following components in our prototype:
 > [!note]
 > This is placed here as this file, once created, will be the file used in the whole system throughout.
 
-This contains the 2 designed messages which our [[Anchors\|Anchors]] will send, and our [[Server/Apache Flink\|Apache Flink]] will use to deserialise and do calculations from.
+This contains the 2 designed messages which our [[Hardware/Anchor Setup\|Anchors]] will send, and our [[Server/Apache Flink\|Apache Flink]] will use to deserialise and do calculations from.
 
 `message.proto`
 
@@ -114,7 +114,7 @@ message Timestamp {
 }
 ```
 
-#### Compilation for [[Anchors\|Anchors]]
+#### Compilation for Anchors
 
 As anchors are ESP32, it should require the [nanopb](https://jpa.kapsi.fi/nanopb/) plugin. First clone the repository:
 
@@ -129,7 +129,7 @@ protoc --plugin=protoc-gen-nanopb="$(pwd)/nanopb/generator/protoc-gen-nanopb" --
 protoc --plugin=protoc-gen-nanopb="$(pwd)/nanopb/generator/protoc-gen-nanopb" --nanopb_out=. timestamp.proto
 ```
 
-This generates `message.pb.c`, `message.pb.h`, `timestamp.pb.c` and `timestamp.pb.h` files. These files will be used in the setup of [[Anchors\|Anchors]], so have them ready.
+This generates `message.pb.c`, `message.pb.h`, `timestamp.pb.c` and `timestamp.pb.h` files. These files will be used in [[Hardware/Anchor Setup\|Anchor Setup]], so have them ready.
 
 #### Compilation for [[Server/Apache Flink\|Apache Flink]]
 
@@ -338,5 +338,4 @@ sudo apt-get install kafkacat
 ```
 
 - Back to [[README\|README]]
-- Go create the rest of [[Architecture\|Architecture]]
-- Go run the prototype here: [[Guides/For platform users\|For platform users]]
+- Go create the rest of [[Architecture\|Architecture]] in [[Guides/For Building PAMS\|For Building PAMS]]
