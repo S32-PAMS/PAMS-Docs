@@ -61,7 +61,7 @@ Once the PCB is built, code can be uploaded into the ESP32 by following the inst
 
 For building tags without the detachment mechanism use the models in `Tag Casing`.
 
-The STEP models can be exported into STL files and converted into gcode using the desired program for the 3D printer in use. The preferred material for the casing is PLA.
+The STEP models can be exported into STL files and converted into `gcode` using the desired program for the 3D printer in use. The preferred material for the casing is PLA.
 
 Once the Tag casing models are printed they must be assembled as such. There are mainly two components to the casing the outer and the inner covering. They can be assembled using the inbuilt snap fit mechanism which requires you to push the two parts of the casing together as shown in the figure below.
 
