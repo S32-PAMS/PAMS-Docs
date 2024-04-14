@@ -67,9 +67,15 @@ Once the bead is installed the latch must be loaded into the back casing to make
 
 Once the latch and bead have been inserted they can be assembled using the inbuilt snap fit mechanism which requires you to push the two parts of the casing together as shown in the figure below. Please pay attention to the placement of the pressure sensor and the battery for this configuration of the Tag.
 
+![Tag latch.png](/img/user/Attachments/hardware/Tag%20latch.png)
+
+*Fig 6: Top case with tag*
+
+Once you have this you can assemble it with the rest.
+
 ![Tag_assembly_with_detach.png](/img/user/Attachments/hardware/Tag_assembly_with_detach.png)
 
-*Fig 6: Tag PCB assembly with Detachment*
+*Fig 7: Tag PCB assembly with Detachment*
 
 Once the tag is completed if the ESP32 has not already been setup, you can upload the code from the following [link](https://github.com/S32-PAMS/PAMS-Hardware/tree/main/tag_code).
 
