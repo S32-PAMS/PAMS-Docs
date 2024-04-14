@@ -684,7 +684,7 @@ char* bytesToHexString(const uint8_t data[], uint16_t data_size) {
 
 ### Uploading the code
 
-Compile all the code described above. The arduino `.ino` file can be found in the following link. Plug the ESP32 to the computer and open the Arduino Code Editor. Select the board that you are using as well as the port, for this project we used the ESP32 Devkit V1 model. Compile and upload the code to the board. While the ESP32 is connected to the device you are using, you can open the Serial Monitor on the Arduino IDE for troubleshooting.
+Compile all the code described above. The arduino `.ino` file can be found in the following [link](https://github.com/S32-PAMS/PAMS-Hardware/tree/main/anchor_code). Plug the ESP32 to the computer and open the Arduino Code Editor. Select the board that you are using as well as the port, for this project we used the ESP32 Devkit V1 model. Compile and upload the code to the board. While the ESP32 is connected to the device you are using, you can open the Serial Monitor on the Arduino IDE for troubleshooting.
 
 ## Security Additions
 
