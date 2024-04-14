@@ -5,7 +5,7 @@
 
 
 > [!attention]
-> Ensure that the hosting machine for the camera server is connected to the same network as the camera(s), because the camera is identified by their IP addresses in a network. This is similar for all components in PAMS, including the hardware [[Tags\|Tags]] and [[Anchors\|Anchors]]. You may use a VPN if necessary.
+> Ensure that the hosting machine for the camera server is connected to the same network as the camera(s), because the camera is identified by their IP addresses in a network. This is similar for all components in PAMS, including the [[Architecture#Hardware components\|Architecture#Hardware components]] tags and anchors. You may use a VPN if necessary.
 
 By now, you should be able to use the web application to register an account and interact with our web application, accessing maps and tags, given that you have already set up the other components of the server. Refer to [[Architecture\|Architecture]] for the list of components you have to set up to get a full working prototype.
 
