@@ -38,7 +38,7 @@ Once the PCB is manufactured the ESP32 must be soldered onto the PCB in the corr
 >[!note]
 >If the tag is being built without the detachment mechanism then the pressure sensor and the resistor do not need to be soldered on.
 
-## Tag Component Assembly:
+## Tag Component Assembly
 
 1. Solder on DWM1000 UWB module on custom PCB with castellated mounting holes.
 2. Solder on ESP32-WROOM-32 microcontroller
