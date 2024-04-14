@@ -13,6 +13,8 @@ The system architecture is **designed to collect, process, and visualise locatio
 
 ## Hardware components
 
+#hardware 
+
 ![hardwarearchi.png](/img/user/Attachments/archi/hardwarearchi.png)
 
 Design is minimal to reduce weight and bulk.
@@ -23,6 +25,8 @@ Design is minimal to reduce weight and bulk.
 | Anchors   | Also equipped with ESP32 microcontrollers and DW1000 UWB modules<br><br>Stationed at fixed positions in the room<br>Receive data from tags<br>Responsible for forwarding this information to the system's backend via WiFi, using MQTT protocol<br><br>- [[Hardware/Building an Anchor\|Building an Anchor]]<br>- [[Hardware/Anchor Setup\|Anchor Setup]]       |
 
 ## Middleware components
+
+#middleware 
 
 ![middlewarearchi.png](/img/user/Attachments/archi/middlewarearchi.png)
 
@@ -39,9 +43,13 @@ Adheres to Message-Oriented Middleware design, where components should have mech
 
 ## Software components
 
+#software 
+
 ![softwarearchi.png](/img/user/Attachments/archi/softwarearchi.png)
 
 Designed for stream processing of real-time messages, to be aggregated in a user-friendly dashboard.
+
+#data-processing , #parallel-processing , #real-time-processing , #data 
 
 | Component         | Description and role                                                                                                                                                                                                                                                                                                       |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
