@@ -1,7 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/hardware/building-a-tag/","tags":["hardware","tag"],"noteIcon":""}
+dg-publish: true
+tags:
+  - hardware
+  - tag
 ---
-
 > [!abstract] Tag prototype creation instructions
 > This guide teaches you how to build a tag. The tag is attached to the object of interest and acts as the tracker attached to it. It constantly sends messages back and forth from anchor and tag using TWR to measure the distance between the anchor and tag. The anchor and tag combination act as the base level units for the system.
 
@@ -12,10 +14,11 @@ As such the Tag is made of these components electronically
 - ESP32 Devkit 1
 - DWM1000 UWB Module
 - Accelerometer MPU6050
-- Battery Charging Module
-- Battery (LiPO)
+- TP4056 Battery Charging Module
+- 3.7V 1500mAh Battery (LiPO)
 - Pressure Sensor (Optional)
-- Pressure Senstivity Resistor (Optional)
+- DF9-40 Pressure Senstivity Resistor (Optional)
+- 200k Ohm Resistor (Optional, used parallel to DF9-40)
 - Custom PCB
 
 The PCB is based of the following circuit.
@@ -36,6 +39,23 @@ Once the PCB is manufactured the ESP32 must be soldered onto the PCB in the corr
 
 >[!note]
 >If the tag is being built without the detachment mechanism then the pressure sensor and the resistor do not need to be soldered on.
+
+## Tag Component Assembly:
+
+1. Solder on DWM1000 UWB module on custom PCB with castellated mounting holes.
+2. Solder on ESP32-WROOM-32 microcontroller
+	1. **IMPORTANT!** As we are using a 3.7V LiPo battery to power the tag, ensure that the ESP32 is capable of receiving voltages from 3V to 4.2V. This is dependent on the on-board LDO.
+	2. If the ESP32 is unable to receive a varied voltage, consider implementing an external LDO to regulate the voltage, or redesign a custom ESP32 development board for this use case (Ideal).
+3. Solder on MPU6050 accelerometer.
+4. Snip off excess pin lengths
+	1. This is to ensure that the pins would not puncture the LiPo battery upon mounting into the casing
+5. Solder the 3.7V LiPo battery onto the B+ and B- terminals of the TP4056 battery charging module respectively
+	1. Check the connection by briefly charging the battery via the USB-C port on the battery charging module.
+	2. **IMPORTANT!** If the charging does not seem to work, try using a USB-A to USB-C cable. USB-C cables have a function where it will stop power supply upon no/incorrect detection resistors, and the Chinese OEM TP4056 boards we bought did NOT have it, thus preventing the cable from supplying power. USB-A to USB-C cables however do not have this requirement and will supply power as per normal.
+6. Solder 2 cables from the Out+ and Out- of the TP4056 board to the pads on the back of the custom PCB.
+	1. **IMPORTANT!** There was no switch integrated in this device as there was no need to turn it off. Be careful to not let the positive and negative terminals touch when soldering, as it might cause sparks and/or an electrical fire
+7. *(OPTIONAL)* If assembling for tags with a detachment functionality, solder the 200k Ohm onto the custom PCB, and the force sensor on the back of the custom PCB
+8. The circuitry components for the tag is completed
 
 ## Tag Casing without Detachment
 
