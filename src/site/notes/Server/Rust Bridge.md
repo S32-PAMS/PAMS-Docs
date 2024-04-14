@@ -1,10 +1,7 @@
 ---
-dg-publish: true
-dg-home: 
-tags:
-  - middleware
-  - archi
+{"dg-publish":true,"permalink":"/server/rust-bridge/","tags":["middleware","archi"],"noteIcon":""}
 ---
+
 > [!abstract] Rust bridge
 > MQTT messages pass from the [[Server/MQTT Broker\|MQTT Broker]], but [[Server/Apache Kafka\|Apache Kafka]] cannot consume directly from the [[Server/MQTT Broker\|MQTT Broker]]. As such, we made this bridge to pass the message from the MQTT topics to the Kafka topics. You can implement this in any other development language, but we chose a Rust development image for this purpose.
 
@@ -114,7 +111,7 @@ code .
 Inside `Rust/producer/src` which should be created after creating the `producer` application, create `main.rs`.
 
 > [!note]
-> - Ensure the MQTT topic name that you are subscribing to is consistent to what your [[Anchors\|Anchors]] are sending, and what the [[Server/MQTT Broker\|MQTT Broker]] is sending.
+> - Ensure the MQTT topic name that you are subscribing to is consistent to what your [[Hardware/Anchor Setup\|anchors]] are sending, and what the [[Server/MQTT Broker\|MQTT Broker]] is sending.
 > - Ensure the names of the [[Server/Apache Kafka\|Apache Kafka]] topics are also consistent with what [[Server/Apache Kafka\|Apache Kafka]] will later subscribe to.
 > - Change your [[Server/MQTT Broker\|MQTT Broker]]'s domain or IP address accordingly.
 
