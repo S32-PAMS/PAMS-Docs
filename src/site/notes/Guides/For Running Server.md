@@ -201,7 +201,9 @@ The image below shows the page to monitor all the tags. Highlighted box 1 shows 
 
 The user will also be able to view the footage of camera associated to each tags.
 
-![[cam_demo.mp4]]
+
+<video src="obsidian://open?vault=PAMS-ManualContent&file=Attachments%2Ffrontend-users%2Fcam_demo.mp4" width="320" height="240" controls></video>
+
 
 > [!note]
 > The system admin will need to manually associate each tag to each camera depending on the set up of the environment.
