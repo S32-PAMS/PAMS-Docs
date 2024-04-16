@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Guides/For Testers/","tags":["run","middleware","software"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/guides/for-testers/","tags":["run","middleware","software"],"noteIcon":""}
 ---
 
 > [!abstract] How to run the test code
