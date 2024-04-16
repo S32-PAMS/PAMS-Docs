@@ -1,11 +1,7 @@
 ---
-dg-publish: true
-dg-home: 
-tags:
-  - middleware
-  - archi
-  - message-passing
+{"dg-publish":true,"permalink":"/server/mqtt-broker/","tags":["middleware","archi","message-passing"],"noteIcon":""}
 ---
+
 > [!abstract] MQTT Broker
 > This is responsible for the **message-passing** functionality of our message-oriented middleware [[Architecture\|Architecture]]. As long as this function is satisfied, it does not matter the choice of the broker.
 > Common options for MQTT Broker:
@@ -47,7 +43,7 @@ services:
 	  - <path to MQTT broker private key>
 ```
 
-This assumes that [[Guides/For security personnel\|the secure implementation]] is set up. Use the `openssl` version of the image.
+This assumes that [[Guides/For Security Personnel\|the secure implementation]] is set up. Use the `openssl` version of the image.
 
 ## NanoMQ
 
