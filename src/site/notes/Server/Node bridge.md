@@ -1,15 +1,7 @@
 ---
-dg-publish: true
-dg-home: 
-tags:
-  - software
-  - parallel-processing
-  - data-processing
-  - socketio
-  - websocket
-  - backend
-  - real-time-processing
+{"dg-publish":true,"permalink":"/server/node-bridge/","tags":["software","parallel-processing","data-processing","socketio","websocket","backend","real-time-processing"],"noteIcon":""}
 ---
+
 > [!abstract] Node Bridge
 > This component is responsible for consuming data from Apache Kafka and sending it into the relevant frontend components. Socket.IO was chosen for this as it supports real time processing and has broadcasting functionalities, allowing all of our components to receive relevant information at once.
 
