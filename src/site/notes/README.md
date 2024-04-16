@@ -9,7 +9,7 @@
 > 
 > PAMS is *designed* to provide *security* and enhance operational *efficiency*. It is both *scalable* and *cost-efficient*. It also integrates with existing networking infrastructures to provide *detailed analytics*, enabling effective resource monitoring and management across various sectors.
 
-Find out more about our design:
+Find out more about our design
 
 - [[Architecture\|Architecture]]
 - [[Security\|Security]]
@@ -18,7 +18,7 @@ Let PAMS resolve your asset tracking needs.
 
 ## User Manuals
 
-**Get started** here
+**Get started** here...
 
 - [[Guides/For Building PAMS\|For Building PAMS]]
 - [[Guides/For security personnel\|For Security Personnel]]
@@ -30,7 +30,8 @@ Let PAMS resolve your asset tracking needs.
 
 # How to control this manual
 
-Repositories: 
+Repositories:
+
 - [Manual Content](https://github.com/S32-PAMS/PAMS-ManualContent)
 - [Public Hosting](https://github.com/S32-PAMS/PAMS-Docs)
 
