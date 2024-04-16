@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Architecture/","tags":["archi"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/architecture/","tags":["archi"],"noteIcon":""}
 ---
 
 ## System Overview of the PAMS Architecture 
