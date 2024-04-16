@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/server/apache-flink/","tags":["software","parallel-processing","data-processing"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/Server/Apache Flink/","tags":["software","parallel-processing","data-processing"],"noteIcon":""}
 ---
 
 > [!abstract] Apache Flink
