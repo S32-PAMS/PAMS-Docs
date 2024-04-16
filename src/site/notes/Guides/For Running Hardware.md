@@ -1,7 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/guides/for-running-hardware/","tags":["hardware"],"noteIcon":""}
+dg-publish: true
+tags:
+  - hardware
 ---
-
 > [!abstract] How to set up hardware for prototype
 > The anchors and tags are the hardware main components that act as the base unit of the system as such they play an important role in our system. The following are instructions on how to use the anchors and tags once they have been setup.
 
