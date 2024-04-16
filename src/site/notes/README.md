@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/readme/","tags":["home","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/readme/","tags":["home","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry"],"noteIcon":""}
 ---
 
 # PAMS
@@ -21,7 +21,7 @@ Let PAMS resolve your asset tracking needs.
 **Get started** here
 
 - [[Guides/For Building PAMS\|For Building PAMS]]
-- [[Guides/For security personnel\|For Security Personnel]]
+- [[Guides/For Security Personnel\|For Security Personnel]]
 - [[Guides/For Running Hardware\|For Running Hardware]]
 - [[Guides/For Running Server\|For Running Server]]
 - [[Guides/For Testers\|For Testers]]
