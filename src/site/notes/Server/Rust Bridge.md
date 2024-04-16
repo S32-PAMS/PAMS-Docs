@@ -1,7 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/server/rust-bridge/","tags":["middleware","archi"],"noteIcon":""}
+dg-publish: true
+dg-home: 
+tags:
+  - middleware
+  - archi
 ---
-
 > [!abstract] Rust bridge
 > MQTT messages pass from the [[Server/MQTT Broker\|MQTT Broker]], but [[Server/Apache Kafka\|Apache Kafka]] cannot consume directly from the [[Server/MQTT Broker\|MQTT Broker]]. As such, we made this bridge to pass the message from the MQTT topics to the Kafka topics. You can implement this in any other development language, but we chose a Rust development image for this purpose.
 
