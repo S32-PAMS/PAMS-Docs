@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Guides/For Running Hardware/","tags":["hardware"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/guides/for-running-hardware/","tags":["hardware"],"noteIcon":""}
 ---
 
 > [!abstract] How to set up hardware for prototype
