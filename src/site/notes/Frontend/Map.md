@@ -1,7 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/map/","tags":["software","parallel-processing","data-processing"],"noteIcon":""}
+dg-publish: true
+dg-home: 
+tags:
+  - software
+  - parallel-processing
+  - data-processing
 ---
-
 > [!abstract] Map
 > This component is responsible primarily for creating the visualisations. However, to do this, it has several sub functions
 > 1. Consuming information from socket io
