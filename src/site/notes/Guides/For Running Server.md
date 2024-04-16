@@ -1,11 +1,7 @@
 ---
-dg-publish: true
-dg-home: 
-tags:
-  - run
-  - middleware
-  - software
+{"dg-publish":true,"permalink":"/guides/for-running-server/","tags":["run","middleware","software"],"noteIcon":""}
 ---
+
 > [!abstract] How to set up the backend for the prototype
 > This page contains instructions on how to get our prototype to run.
 
