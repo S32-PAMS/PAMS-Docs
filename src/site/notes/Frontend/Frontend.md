@@ -1,6 +1,7 @@
 ---
-dg-publish: true
+{"dg-publish":true,"permalink":"/frontend/frontend/","noteIcon":""}
 ---
+
 > [!abstract] Frontend
 > This component refers to the web application, which provides the user interface for PAMS.
 > 
