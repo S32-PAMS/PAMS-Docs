@@ -18,7 +18,7 @@ Let PAMS resolve your asset tracking needs.
 
 ## User Manuals
 
-**Get started** here.
+**Get started** here...
 
 - [[Guides/For Building PAMS\|For Building PAMS]]
 - [[Guides/For security personnel\|For Security Personnel]]
