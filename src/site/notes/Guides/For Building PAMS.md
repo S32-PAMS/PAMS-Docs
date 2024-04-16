@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/guides/for-building-pams/","noteIcon":""}
+{"dg-publish":true,"permalink":"/Guides/For Building PAMS/","noteIcon":""}
 ---
 
 > [!summary] Index for building PAMS
