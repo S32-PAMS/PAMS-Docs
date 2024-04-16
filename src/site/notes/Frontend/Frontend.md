@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/frontend/frontend/","noteIcon":""}
+{"dg-publish":true,"permalink":"/Frontend/Frontend/","noteIcon":""}
 ---
 
 > [!abstract] Frontend
