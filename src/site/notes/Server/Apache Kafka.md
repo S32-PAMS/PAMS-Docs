@@ -1,11 +1,7 @@
 ---
-dg-publish: true
-dg-home: 
-tags:
-  - middleware
-  - archi
-  - message-queueing
+{"dg-publish":true,"permalink":"/server/apache-kafka/","tags":["middleware","archi","message-queueing"],"noteIcon":""}
 ---
+
 > [!abstract] Apache Kafka
 > This component is used for 2 purposes:
 > 1. Satisfies the **message-queuing** capability of our Message-Oriented Middleware [[Architecture\|Architecture]]. Theoretically, other message queues can also be used, but our prototype used Apache Kafka.
