@@ -1,11 +1,7 @@
 ---
-dg-publish: true
-tags:
-  - archi
-  - middleware
-  - software
-dg-home:
+{"dg-publish":true,"permalink":"/server/server-initial-setup/","tags":["archi","middleware","software"],"noteIcon":""}
 ---
+
 > [!abstract] Server setup
 > This manual guides the initial setup of the software server for PAMS (Personnel and Asset Monitoring System), which can run both *locally* and *remotely* on a cloud instance. The server hosts various components of the PAMS [[Architecture\|Architecture]], including middleware and software components necessary for tracking and visualising location data of tagged objects.
 
