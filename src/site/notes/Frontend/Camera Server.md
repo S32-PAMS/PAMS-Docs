@@ -1,12 +1,7 @@
 ---
-dg-publish: true
-tags:
-  - archi
-  - software
-  - camera
-  - streaming
-  - video
+{"dg-publish":true,"permalink":"/Frontend/Camera Server/","tags":["archi","software","camera","streaming","video"],"noteIcon":""}
 ---
+
 
 
 > [!attention]
