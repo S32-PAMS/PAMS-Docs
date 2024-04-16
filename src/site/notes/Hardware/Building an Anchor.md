@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Hardware/Building an Anchor/","tags":["hardware","anchor"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/hardware/building-an-anchor/","tags":["hardware","anchor"],"noteIcon":""}
 ---
 
 > [!abstract] Guide to build an anchor
