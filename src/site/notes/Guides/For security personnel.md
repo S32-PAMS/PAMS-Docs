@@ -1,7 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/guides/for-security-personnel/","tags":["security"],"noteIcon":""}
+dg-publish: true
+tags:
+  - security
+dg-home:
 ---
-
 > [!abstract] Security manual
 > This manual provides comprehensive documentation of the security measures implemented in the Personnel and Asset Monitoring System (PAMS). It serves as a guide for setting up and maintaining the system's security features.
 
