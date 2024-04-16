@@ -1,16 +1,14 @@
 ---
-dg-publish: true
-dg-home: 
-tags:
-  - security
+{"dg-publish":true,"permalink":"/security/","tags":["security"],"noteIcon":""}
 ---
+
 > [!abstract] Security design and considerations
 > This document outlines the security designs put into the system.
 
 Implementation manual: [[Guides/For security personnel\|For Security Personnel]]
 
 # Safety considerations
-
+ 
 ## Code safety
 
 > [!tldr]
