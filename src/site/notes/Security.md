@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Security/","tags":["security"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/security/","tags":["security"],"noteIcon":""}
 ---
 
 > [!abstract] Security design and considerations
