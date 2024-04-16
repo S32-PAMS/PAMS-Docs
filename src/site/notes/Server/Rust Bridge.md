@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/server/rust-bridge/","tags":["middleware","archi"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/Server/Rust Bridge/","tags":["middleware","archi"],"noteIcon":""}
 ---
 
 > [!abstract] Rust bridge
