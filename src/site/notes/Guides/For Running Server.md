@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/guides/for-running-server/","tags":["run","middleware","software"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/Guides/For Running Server/","tags":["run","middleware","software"],"noteIcon":""}
 ---
 
 > [!abstract] How to set up the backend for the prototype
