@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Hardware/Building a Tag/","tags":["hardware","tag"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/hardware/building-a-tag/","tags":["hardware","tag"],"noteIcon":""}
 ---
 
 > [!abstract] Tag prototype creation instructions
