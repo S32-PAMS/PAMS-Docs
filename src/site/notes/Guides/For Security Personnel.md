@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Guides/For Security Personnel/","tags":["security"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/guides/for-security-personnel/","tags":["security"],"noteIcon":""}
 ---
 
 > [!abstract] Security manual
