@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Server/Node bridge/","tags":["software","parallel-processing","data-processing","socketio","websocket","backend","real-time-processing"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/server/node-bridge/","tags":["software","parallel-processing","data-processing","socketio","websocket","backend","real-time-processing"],"noteIcon":""}
 ---
 
 > [!abstract] Node Bridge
