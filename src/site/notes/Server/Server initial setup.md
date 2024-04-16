@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/server/server-initial-setup/","tags":["archi","middleware","software"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/Server/Server initial setup/","tags":["archi","middleware","software"],"noteIcon":""}
 ---
 
 > [!abstract] Server setup
