@@ -1,9 +1,7 @@
 ---
-dg-publish: true
-tags:
-  - anchor
-  - hardware
+{"dg-publish":true,"permalink":"/hardware/anchor-setup/","tags":["anchor","hardware"],"noteIcon":""}
 ---
+
 > [!abstract] Guide to setup anchors
 > This guide assumes you have completed [[Hardware/Building an Anchor\|Building an Anchor]]. The anchor is the primary method for communication of the tag location to the system. The anchor and tag combination act as the base level units for the system.
 
