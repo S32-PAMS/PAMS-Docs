@@ -1,9 +1,7 @@
 ---
-dg-publish: true
-tags:
-  - hardware
-  - tag
+{"dg-publish":true,"permalink":"/hardware/tag-setup/","tags":["hardware","tag"],"noteIcon":""}
 ---
+
 > [!abstract] Guide to setup a built tag
 > This guide assumes that [[Hardware/Building a Tag\|Building a Tag]] has been complete. This illustrates how to setup a tag.
 
