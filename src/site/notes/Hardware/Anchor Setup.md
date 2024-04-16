@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Hardware/Anchor Setup/","tags":["anchor","hardware"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/hardware/anchor-setup/","tags":["anchor","hardware"],"noteIcon":""}
 ---
 
 > [!abstract] Guide to setup anchors
