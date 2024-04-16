@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Hardware/Tag Setup/","tags":["hardware","tag"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/hardware/tag-setup/","tags":["hardware","tag"],"noteIcon":""}
 ---
 
 > [!abstract] Guide to setup a built tag
