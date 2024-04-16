@@ -1,7 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/architecture/","tags":["archi"],"noteIcon":""}
+dg-publish: true
+dg-home: 
+tags:
+  - archi
 ---
-
 ## System Overview of the PAMS Architecture
 
 ![systemarchi.png](/img/user/Attachments/archi/systemarchi.png)
