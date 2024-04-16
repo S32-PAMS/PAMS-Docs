@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Frontend/Database/","tags":["software","archi","data"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/frontend/database/","tags":["software","archi","data"],"noteIcon":""}
 ---
 
 > [!abstract] Database
