@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Frontend/Map/","tags":["software","parallel-processing","data-processing"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/frontend/map/","tags":["software","parallel-processing","data-processing"],"noteIcon":""}
 ---
 
 > [!abstract] Map
