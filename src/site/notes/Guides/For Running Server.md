@@ -1,17 +1,13 @@
 ---
-dg-publish: true
-dg-home: 
-tags:
-  - run
-  - middleware
-  - software
+{"dg-publish":true,"permalink":"/Guides/For Running Server/","tags":["run","middleware","software"],"noteIcon":""}
 ---
+
 > [!abstract] How to set up the backend for the prototype
 > This page contains instructions on how to get our prototype to run.
 
 # Clone relevant git folders
 Clone the below folders from our github
-- PAMS-Software
+- PAMS-Software (branch: integrated)
 - PAMS-Middleware
 - PAMS-FrontEnd
 
@@ -173,6 +169,18 @@ kafkacat -b localhost:9097 -t out_alive
 
 The shell will print all data consumed from `packet_data` and `packet_alive`.
 
+## Sanity Check for Socket Bridge
+
+This section assumes data can be read and added to kafka brokers.  This section also assumes python has been installed.
+
+To check if data can be read from kafka broker to the socket bridge, in PAMS-Software, run apptesting.py after setting the appropriate IP of broker2.
+
+```bash
+python apptesting.py
+```
+
+The frontend console should pick up on hardcoded values if the connection is established. If nothing happens, ensure both containers have been added to the network bridge. 
+
 # Using the Frontend
 
 Assume you are running the web app locally at port 3000, visit `localhost:3000` on your browser.   
@@ -226,6 +234,26 @@ The image below shows how a user can add the anchors from the web app. This is c
 The anchor board also serves to alert users when an anchor has been tampered with and is no longer sending or receiving liveness.
 
 ![anchordead.png](/img/user/Attachments/frontend-users/anchordead.png)
+
+## Sanity Check for Frontend Components
+
+To check that the map and dashboards react correctly to data sent, this section allows you to hardcode data to the frontend. 
+
+Add the hardcoded data into socket.emit in PAMS-Frontend/socketbridge/fe4.js.
+
+```javascript
+socket.emit('ATag0', JSON.stringify({
+ <add data here>
+}))
+```
+
+Ensure node and it's dependencies have been installed.
+
+```bash
+node fe4.js
+```
+
+The frontend should return expected actions.
 
 ---
 # Troubleshooting
