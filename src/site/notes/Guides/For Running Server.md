@@ -10,6 +10,7 @@ Clone the below folders from our github
 - PAMS-Software (branch: integrated)
 - PAMS-Middleware
 - PAMS-FrontEnd
+- PSQL_DB
 
 # MQTT, Rust and Kafka broker setup
 
